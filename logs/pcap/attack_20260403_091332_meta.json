@@ -1,0 +1,12 @@
+{
+    "attack_id": "20260403_091332",
+    "attack_type": "SYN_FLOOD",
+    "src_ip": "192.168.56.1",
+    "start_time": "2026-04-03 09:13:32",
+    "start_ts": 1775207612.8740048,
+    "end_time": "2026-04-03 09:14:17",
+    "duration_s": 44.6,
+    "packet_count": 1147,
+    "file_size_kb": 85.8,
+    "pcap_path": "/app/logs/pcap/attack_20260403_091332.pcap"
+}

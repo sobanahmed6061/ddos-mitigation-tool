@@ -1,0 +1,12 @@
+{
+    "attack_id": "20260421_084441",
+    "attack_type": "UNKNOWN",
+    "src_ip": "192.168.56.1",
+    "start_time": "2026-04-21 08:44:41",
+    "start_ts": 1776761081.0978744,
+    "end_time": "2026-04-21 08:44:59",
+    "duration_s": 18.4,
+    "packet_count": 52,
+    "file_size_kb": 34.2,
+    "pcap_path": "/app/logs/pcap/attack_20260421_084441.pcap"
+}

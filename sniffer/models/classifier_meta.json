@@ -1,0 +1,41 @@
+{
+    "trained_at": "2026-03-23T13:16:27.082526",
+    "classes": [
+        "http_flood",
+        "icmp_flood",
+        "normal",
+        "slowloris",
+        "syn_flood",
+        "udp_flood"
+    ],
+    "n_classes": 6,
+    "features": [
+        "pps",
+        "bps",
+        "avg_pkt_size",
+        "total_packets",
+        "tcp_ratio",
+        "udp_ratio",
+        "icmp_ratio",
+        "syn_ratio",
+        "synack_ratio",
+        "rst_ratio",
+        "syn_count",
+        "ack_count",
+        "rst_count",
+        "fin_count",
+        "unique_src_ips",
+        "top_ip_ratio",
+        "unique_dst_ports",
+        "unique_src_ports",
+        "iat_mean",
+        "iat_std"
+    ],
+    "n_features": 20,
+    "n_estimators": 300,
+    "total_windows": 298,
+    "accuracy": 1.0,
+    "model_path": "/app/models/classifier_rf.joblib",
+    "scaler_path": "/app/models/classifier_scaler.joblib",
+    "encoder_path": "/app/models/classifier_encoder.joblib"
+}

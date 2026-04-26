@@ -1,0 +1,31 @@
+
+*.env
+
+# Live Custom Database 
+live_status.json
+
+# Large data files & Forensic Evidence
+logs/pcap/*.pcap
+logs/reports/*.pdf
+logs/timelines/*.json
+data/redis/
+
+# ML model files (too large for GitHub)
+sniffer/models/*.joblib
+sniffer/models/*.keras
+sniffer/models/*.npy
+
+# Training data
+sniffer/logs/training_*.csv
+sniffer/logs/*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Dynamic IP Lists (contains real/live IPs)
+logs/blacklist.json
+logs/whitelist.json
+logs/ip_history.json

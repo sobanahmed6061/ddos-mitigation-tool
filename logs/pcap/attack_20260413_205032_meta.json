@@ -1,0 +1,12 @@
+{
+    "attack_id": "20260413_205032",
+    "attack_type": "ICMP_FLOOD",
+    "src_ip": "192.168.56.1",
+    "start_time": "2026-04-13 20:50:32",
+    "start_ts": 1776113432.982076,
+    "end_time": "2026-04-13 20:50:45",
+    "duration_s": 12.5,
+    "packet_count": 1,
+    "file_size_kb": 0.1,
+    "pcap_path": "/app/logs/pcap/attack_20260413_205032.pcap"
+}

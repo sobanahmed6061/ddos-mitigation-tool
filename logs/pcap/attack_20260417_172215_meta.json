@@ -1,0 +1,12 @@
+{
+    "attack_id": "20260417_172215",
+    "attack_type": "",
+    "src_ip": "192.168.56.1",
+    "start_time": "2026-04-17 17:22:15",
+    "start_ts": 1776446535.8048904,
+    "end_time": "2026-04-17 17:22:31",
+    "duration_s": 15.5,
+    "packet_count": 55,
+    "file_size_kb": 19.2,
+    "pcap_path": "/app/logs/pcap/attack_20260417_172215.pcap"
+}

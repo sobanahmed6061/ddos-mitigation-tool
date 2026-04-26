@@ -1,0 +1,34 @@
+================================================
+ Phase 1 Test Suite — DDoS Mitigation Tool
+ Run at: 2026-03-16 17:17:28
+================================================
+
+TEST 1: Container Status
+  [PASS] sniffer is running
+  [PASS] influxdb is running
+  [PASS] redis is running
+
+TEST 2: Service Health Checks
+  [PASS] InfluxDB health check passed
+  [PASS] Redis responded with PONG
+  [PASS] baseline.json exists inside sniffer container
+  [PASS] Alert log file exists at /home/ubuntu/ddos-tool/logs/ddos_alerts.log
+
+TEST 3: SYN Flood Detection
+
+  [PASS] SYN FLOOD detected and logged (516 alert entries in log file)
+  [PASS] SYN FLOOD appeared in Docker container logs (623 entries)
+
+  Sample alerts captured:
+    2026-03-16 17:17:54,342 - SYN FLOOD from 192.168.56.1 | count=51 | threshold=50
+    2026-03-16 17:17:54,354 - SYN FLOOD from 192.168.56.1 | count=52 | threshold=50
+    2026-03-16 17:17:54,377 - SYN FLOOD from 192.168.56.1 | count=53 | threshold=50
+    2026-03-16 17:17:54,401 - SYN FLOOD from 192.168.56.1 | count=54 | threshold=50
+    2026-03-16 17:17:54,426 - SYN FLOOD from 192.168.56.1 | count=55 | threshold=50
+
+================================================
+ RESULTS: 9 passed | 0 failed
+================================================
+
+ ✅ ALL TESTS PASSED — Phase 1 Complete!
+

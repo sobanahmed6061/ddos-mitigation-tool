@@ -1,0 +1,57 @@
++ set -euo pipefail
++ PASS=0
++ FAIL=0
++ BASE_DIR=/home/ubuntu/ddos-tool
++ LOG_DIR=/home/ubuntu/ddos-tool/logs
++ RESULTS_FILE=/home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+++ date '+%Y-%m-%d %H:%M:%S'
++ TIMESTAMP='2026-03-15 22:52:30'
++ mkdir -p /home/ubuntu/ddos-tool/logs
++ echo ================================================
++ tee /home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+================================================
++ echo ' Phase 1 Test Suite — DDoS Mitigation Tool'
++ tee -a /home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+ Phase 1 Test Suite — DDoS Mitigation Tool
++ echo ' Run at: 2026-03-15 22:52:30'
++ tee -a /home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+ Run at: 2026-03-15 22:52:30
++ echo ================================================
++ tee -a /home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+================================================
++ cd /home/ubuntu/ddos-tool
++ echo ''
++ tee -a /home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+
++ echo 'TEST 1: Container Status'
++ tee -a /home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+TEST 1: Container Status
++ sudo docker compose up -d
+ Container ddos_redis Running 
+ Container ddos_influxdb Running 
+ Container ddos_sniffer Running 
+++ sudo docker compose ps --status running --services
+++ tr -d '\r'
++ RUNNING_SERVICES='influxdb
+redis
+sniffer'
++ echo '  [*] Running services:'
++ tee -a /home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+  [*] Running services:
++ echo 'influxdb
+redis
+sniffer'
++ sed 's/^/    - /'
++ tee -a /home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+    - influxdb
+    - redis
+    - sniffer
++ echo 'influxdb
+redis
+sniffer'
++ grep -qx sniffer
++ pass 'sniffer service is running'
++ echo '  [PASS] sniffer service is running'
++ tee -a /home/ubuntu/ddos-tool/logs/phase1_test_results.txt
+  [PASS] sniffer service is running
++ (( PASS++ ))

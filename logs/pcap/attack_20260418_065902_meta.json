@@ -1,0 +1,12 @@
+{
+    "attack_id": "20260418_065902",
+    "attack_type": "UDP_FLOOD",
+    "src_ip": "192.168.56.1",
+    "start_time": "2026-04-18 06:59:02",
+    "start_ts": 1776495542.5461557,
+    "end_time": "2026-04-18 06:59:24",
+    "duration_s": 21.5,
+    "packet_count": 189,
+    "file_size_kb": 14.1,
+    "pcap_path": "/app/logs/pcap/attack_20260418_065902.pcap"
+}

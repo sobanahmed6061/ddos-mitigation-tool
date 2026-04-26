@@ -1,0 +1,40 @@
+{
+    "collected_at": "2026-03-14 10:39:22",
+    "duration_seconds": 120,
+    "packets_per_second": {
+        "mean": 11.31,
+        "std": 3.58,
+        "max": 15,
+        "p95": 14
+    },
+    "bytes_per_second": {
+        "mean": 10799.88,
+        "std": 3490.2,
+        "max": 12744,
+        "p95": 12726
+    },
+    "tcp_per_second": {
+        "mean": 11.12,
+        "std": 3.7,
+        "max": 14,
+        "p95": 14
+    },
+    "udp_per_second": {
+        "mean": 0.19,
+        "std": 0.47,
+        "max": 2,
+        "p95": 1
+    },
+    "icmp_per_second": {
+        "mean": 0,
+        "std": 0.0,
+        "max": 0,
+        "p95": 0
+    },
+    "syn_per_second": {
+        "mean": 0.91,
+        "std": 0.3,
+        "max": 1,
+        "p95": 1
+    }
+}

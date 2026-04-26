@@ -1,0 +1,23 @@
+2026-03-20 17:17:41,797 - ML ANOMALY DETECTED | score=-0.1015 | pps=1.63 | syn_ratio=0.4286 | udp_ratio=0.2222 | icmp_ratio=0.0 | unique_dst_ports=5
+2026-03-20 17:36:24,941 - ML ANOMALY DETECTED | type=SYN_FLOOD | score=-0.0699 | pps=15.07 | syn_ratio=0.9211 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=36
+2026-03-20 17:36:29,940 - ML ANOMALY DETECTED | type=SYN_FLOOD | score=-0.0830 | pps=22.5 | syn_ratio=0.7522 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=26
+2026-03-20 17:36:35,178 - ML ANOMALY DETECTED | type=SYN_FLOOD | score=-0.0960 | pps=17.32 | syn_ratio=0.7079 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=5
+2026-03-22 04:45:30,667 - ML ANOMALY DETECTED | type=SYN_FLOOD | score=-0.0802 | pps=22.43 | syn_ratio=0.9913 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=56
+2026-03-22 04:45:36,108 - ML ANOMALY DETECTED | type=SYN_FLOOD | score=-0.0889 | pps=22.36 | syn_ratio=0.7565 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=9
+2026-03-22 04:45:41,201 - ML ANOMALY DETECTED | type=SYN_FLOOD | score=-0.0958 | pps=15.71 | syn_ratio=0.7468 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=7
+2026-03-22 04:45:46,373 - ML ANOMALY DETECTED | type=UNKNOWN | score=-0.0809 | pps=97.42 | syn_ratio=0.6224 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=189
+2026-03-22 04:45:51,700 - ML ANOMALY DETECTED | type=HTTP_FLOOD | score=-0.0809 | pps=100.75 | syn_ratio=0.5116 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=265
+2026-03-22 04:46:33,722 - ML ANOMALY DETECTED | type=UDP_FLOOD | score=-0.1264 | pps=54.63 | syn_ratio=0.0 | udp_ratio=0.9782 | icmp_ratio=0.0218 | unique_dst_ports=2
+2026-03-22 04:46:38,743 - ML ANOMALY DETECTED | type=UDP_FLOOD | score=-0.1227 | pps=43.99 | syn_ratio=0.0 | udp_ratio=1.0 | icmp_ratio=0.0 | unique_dst_ports=1
+2026-03-22 04:46:44,247 - ML ANOMALY DETECTED | type=UDP_FLOOD | score=-0.1258 | pps=49.77 | syn_ratio=0.0 | udp_ratio=1.0 | icmp_ratio=0.0 | unique_dst_ports=1
+2026-03-22 04:46:52,398 - ML ANOMALY DETECTED | type=SYN_FLOOD | score=-0.1292 | pps=30.21 | syn_ratio=1.0 | udp_ratio=0.996 | icmp_ratio=0.0 | unique_dst_ports=1
+2026-03-22 05:02:16,208 - ML ANOMALY DETECTED | type=SYN_FLOOD | score=-0.0871 | pps=26.69 | syn_ratio=0.7463 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=21
+2026-03-22 05:02:21,110 - ML ANOMALY DETECTED | type=SYN_FLOOD | score=-0.0857 | pps=110.47 | syn_ratio=0.5714 | udp_ratio=0.0 | icmp_ratio=0.0 | unique_dst_ports=207
+2026-03-22 05:03:07,717 - ML ANOMALY DETECTED | type=UDP_FLOOD | score=-0.1256 | pps=48.6 | syn_ratio=0.0 | udp_ratio=0.9754 | icmp_ratio=0.0246 | unique_dst_ports=2
+2026-03-22 05:03:12,997 - ML ANOMALY DETECTED | type=UDP_FLOOD | score=-0.1266 | pps=66.01 | syn_ratio=0.0 | udp_ratio=1.0 | icmp_ratio=0.0 | unique_dst_ports=1
+2026-03-22 05:03:18,409 - ML ANOMALY DETECTED | type=UDP_FLOOD | score=-0.1256 | pps=61.22 | syn_ratio=0.0 | udp_ratio=1.0 | icmp_ratio=0.0 | unique_dst_ports=1
+2026-03-22 05:03:28,543 - ML ANOMALY DETECTED | type=UDP_FLOOD | score=-0.1244 | pps=38.07 | syn_ratio=1.0 | udp_ratio=0.9974 | icmp_ratio=0.0 | unique_dst_ports=1
+2026-03-22 05:03:54,029 - ML ANOMALY DETECTED | type=ICMP_FLOOD | score=-0.0689 | pps=14.79 | syn_ratio=0.0 | udp_ratio=0.0 | icmp_ratio=1.0 | unique_dst_ports=1
+2026-03-22 05:03:59,263 - ML ANOMALY DETECTED | type=ICMP_FLOOD | score=-0.0823 | pps=16.19 | syn_ratio=0.0 | udp_ratio=0.0 | icmp_ratio=1.0 | unique_dst_ports=1
+2026-03-22 05:04:04,410 - ML ANOMALY DETECTED | type=ICMP_FLOOD | score=-0.0944 | pps=14.42 | syn_ratio=0.0 | udp_ratio=0.0 | icmp_ratio=1.0 | unique_dst_ports=1
+2026-03-22 05:04:12,909 - ML ANOMALY DETECTED | type=ICMP_FLOOD | score=-0.0942 | pps=16.69 | syn_ratio=1.0 | udp_ratio=0.0 | icmp_ratio=0.9931 | unique_dst_ports=2

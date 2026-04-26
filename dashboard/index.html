@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DDoS Mitigation Tool — Live Dashboard</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f1117; color: #e2e8f0; min-height: 100vh; }
+    .header { background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); border-bottom: 1px solid #3182ce; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .header-title { font-size: 20px; font-weight: 700; color: #63b3ed; letter-spacing: 1px; }
+    .header-status { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+    .status-dot { width: 10px; height: 10px; border-radius: 50%; animation: pulse 2s infinite; }
+    .status-dot.online  { background: #48bb78; }
+    .status-dot.offline { background: #fc8181; }
+    @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding: 20px 24px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 0 24px 20px; }
+    .grid-3 { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; padding: 0 24px 20px; }
+    .card { background: #1a202c; border: 1px solid #2d3748; border-radius: 10px; padding: 18px; }
+    .card-header { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #718096; margin-bottom: 8px; }
+    .card-value { font-size: 32px; font-weight: 700; color: #e2e8f0; }
+    .card-sub { font-size: 12px; color: #718096; margin-top: 4px; }
+    .card-title { font-size: 14px; font-weight: 600; color: #a0aec0; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #2d3748; }
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; }
+    .badge-CRITICAL { background:#742a2a; color:#fc8181; } .badge-HIGH { background:#7b341e; color:#fbd38d; }
+    .badge-MEDIUM { background:#744210; color:#f6e05e; } .badge-LOW { background:#1c4532; color:#68d391; }
+    .badge-INFO { background:#1a365d; color:#90cdf4; } .badge-LAB { background:#2d3748; color:#a0aec0; }
+    .alert-table { width:100%; border-collapse:collapse; }
+    .alert-table th { text-align:left; padding:8px 10px; font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:#718096; border-bottom:1px solid #2d3748; }
+    .alert-table td { padding:10px 10px; font-size:13px; border-bottom:1px solid #1a202c; }
+    .alert-table tr:hover td { background:#2d3748; }
+    .attack-type { color:#fc8181; font-weight:600; font-size:12px; }
+    .score-bar-wrap { background:#2d3748; border-radius:4px; height:8px; width:100%; overflow:hidden; }
+    .score-bar { height:100%; border-radius:4px; transition: width 0.5s; }
+    .metric-row { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid #2d3748; font-size:13px; }
+    .metric-row:last-child { border-bottom:none; }
+    .metric-label { color:#718096; } .metric-value { font-weight:600; color:#63b3ed; }
+    .active-attack { background:#2d1515; border:1px solid #e53e3e; border-radius:8px; padding:12px; margin-bottom:10px; }
+    .active-attack-ip { font-weight:700; color:#fc8181; font-size:15px; }
+    canvas { max-height:220px; }
+    .empty { text-align:center; color:#4a5568; padding:30px; font-size:13px; }
+    .refresh-bar { text-align:right; padding:0 24px 10px; font-size:11px; color:#4a5568; }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+const API_BASE = `http://${window.location.hostname}:10000/api/v1`;
+const REFRESH  = 3000;
+
+function fetchJSON(path) {
+  return fetch(`${API_BASE}${path}`)
+    .then(r => r.json())
+    .catch(() => null);
+}
+
+function fmtNum(n) {
+  if (!n) return '0';
+  if (n >= 1000000) return `${(n/1000000).toFixed(1)}M`;
+  if (n >= 1000)    return `${(n/1000).toFixed(1)}K`;
+  return String(n);
+}
+
+function ScoreBar({ score }) {
+  const color = score >= 85 ? '#e53e3e' : score >= 70 ? '#dd6b20' : score >= 55 ? '#d69e2e' : score >= 40 ? '#ecc94b' : '#63b3ed';
+  return (
+    <div style={{display:'flex', alignItems:'center', gap:8}}>
+      <div className="score-bar-wrap" style={{flex:1}}>
+        <div className="score-bar" style={{width:`${score}%`, background:color}}/>
+      </div>
+      <span style={{fontSize:11, color, minWidth:36, fontWeight:700}}>{score}</span>
+    </div>
+  );
+}
+
+function ScoreBreakdown({ breakdown }) {
+  if (!breakdown) return null;
+  const items = [
+    ['ML', breakdown.ml_anomaly, 25, '#63b3ed'],
+    ['Type', breakdown.attack_type, 20, '#fc8181'],
+    ['PPS', breakdown.packet_rate, 20, '#68d391'],
+    ['Intel', breakdown.threat_intel, 20, '#f6e05e'],
+    ['Duration', breakdown.duration, 15, '#b794f4'],
+  ];
+  return (
+    <div style={{display:'flex', gap:6, marginTop:4, flexWrap:'wrap'}}>
+      {items.map(([label, val, max, color]) => (
+        <div key={label} style={{ background:'#2d3748', borderRadius:4, padding:'2px 8px', fontSize:11 }}>
+          <span style={{color:'#718096'}}>{label}: </span>
+          <span style={{color, fontWeight:700}}>{val}/{max}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function StatCard({ label, value, sub, color }) {
+  return (
+    <div className="card">
+      <div className="card-header">{label}</div>
+      <div className="card-value" style={{color: color||'#e2e8f0'}}>{value ?? '—'}</div>
+      {sub && <div className="card-sub">{sub}</div>}
+    </div>
+  );
+}
+
+function PPSChart({ history }) {
+  const ref = useRef(null);
+  const chartRef= useRef(null);
+
+  useEffect(() => {
+    if (!ref.current) return;
+    if (chartRef.current) chartRef.current.destroy();
+    chartRef.current = new Chart(ref.current, {
+      type: 'line',
+      data: {
+        labels: history.map((_,i) => i),
+        datasets: [{ label: 'PPS', data: history, borderColor: '#63b3ed', backgroundColor: 'rgba(99,179,237,0.1)', borderWidth: 2, fill: true, tension: 0.4, pointRadius: 0 }]
+      },
+      options: {
+        responsive:true, animation:false, plugins:{ legend:{display:false} },
+        scales:{ x:{ display:false }, y:{ min: 0, grid:{ color:'#2d3748' }, ticks:{ color:'#718096', font:{size:10} } } }
+      }
+    });
+    return () => { if (chartRef.current) chartRef.current.destroy(); };
+  }, [history]);
+
+  return <canvas ref={ref}/>;
+}
+
+function ProtocolChart({ metrics }) {
+  const ref = useRef(null);
+  const chartRef= useRef(null);
+
+  useEffect(() => {
+    if (!ref.current || !metrics) return;
+    if (chartRef.current) chartRef.current.destroy();
+    const tcp  = (metrics.tcp_ratio  ||0)*100;
+    const udp  = (metrics.udp_ratio  ||0)*100;
+    const icmp = (metrics.icmp_ratio ||0)*100;
+    const other= Math.max(0, 100-tcp-udp-icmp);
+    chartRef.current = new Chart(ref.current, {
+      type:'doughnut',
+      data:{
+        labels:['TCP','UDP','ICMP','Other'],
+        datasets:[{ data:[tcp,udp,icmp,other], backgroundColor:['#3182ce','#d69e2e','#e53e3e','#718096'], borderWidth:0 }]
+      },
+      options:{ responsive:true, animation:false, plugins:{legend:{position:'bottom', labels:{color:'#a0aec0', font:{size:10}, padding:8}}} }
+    });
+    return () => { if (chartRef.current) chartRef.current.destroy(); };
+  }, [metrics]);
+
+  return <canvas ref={ref}/>;
+}
+
+function Dashboard() {
+  const [status, setStatus] = useState(null);
+  const [alerts, setAlerts] = useState([]);
+  const [metrics, setMetrics] = useState(null);
+  const [active, setActive] = useState({});
+  const [online, setOnline] = useState(false);
+  const [ppsHist, setPpsHist] = useState(Array(60).fill(0));
+  const [lastUpd, setLastUpd] = useState('—');
+  const [forensics,setForensics]=useState(null);
+
+  useEffect(() => {
+    async function refresh() {
+      const [s, a, m, lv, f] = await Promise.all([
+        fetchJSON('/status'), fetchJSON('/alerts?limit=15'), fetchJSON('/metrics'), fetchJSON('/alerts/live'), fetchJSON('/forensics'),
+      ]);
+      if (s) { setStatus(s); setOnline(true); } else setOnline(false);
+      if (a) setAlerts(a.alerts || []);
+      if (m) {
+        setMetrics(m.live_traffic);
+        const pps = m.live_traffic?.pps || 0;
+        setPpsHist(h => [...h.slice(1), pps]);
+      }
+      if (lv) setActive(lv.attacks || {});
+      if (f)  setForensics(f);
+      setLastUpd(new Date().toLocaleTimeString());
+    }
+    refresh();
+    const iv = setInterval(refresh, REFRESH);
+    return () => clearInterval(iv);
+  }, []);
+
+  const uptime = status ? `${Math.floor((status.uptime_seconds||0)/60)}m ${Math.round((status.uptime_seconds||0)%60)}s` : '—';
+
+  return (
+    <div>
+      <div className="header">
+        <div className="header-title">🛡 DDoS MITIGATION TOOL — LIVE DASHBOARD</div>
+        <div className="header-status">
+          <div className={`status-dot ${online?'online':'offline'}`}/>
+          <span>{online?'CONNECTED':'DISCONNECTED'}</span>
+          <span style={{color:'#4a5568',margin:'0 8px'}}>|</span>
+          <span>Refreshes every 3s</span>
+        </div>
+      </div>
+
+      <div className="grid">
+        <StatCard label="Total Alerts" value={status?.total_alerts ?? '—'} sub="since startup" color="#fc8181"/>
+        <StatCard label="Active Attacks" value={status?.active_attacks ?? '—'} sub={status?.active_attacks > 0 ? '⚠️ Under attack!' : '✅ Clear'} color={status?.active_attacks > 0 ? '#fc8181' : '#68d391'}/>
+        <StatCard label="Live PPS" value={metrics ? Math.round(metrics.pps) : '—'} sub="packets per second" color="#63b3ed"/>
+        <StatCard label="Uptime" value={uptime} sub={`${status?.total_windows??0} windows analyzed`} color="#68d391"/>
+      </div>
+
+      <div className="grid-3">
+        <div className="card"><div className="card-title">📈 Live Packet Rate (60s window)</div><PPSChart history={ppsHist}/></div>
+        <div className="card"><div className="card-title">🔀 Protocol Distribution</div><ProtocolChart metrics={metrics}/></div>
+      </div>
+
+      <div className="grid-2">
+        <div className="card">
+          <div className="card-title">🔴 Active Attacks</div>
+          {Object.keys(active).length === 0 ? <div className="empty">✅ No active attacks</div> : Object.entries(active).map(([ip, atk]) => (
+            <div key={ip} className="active-attack">
+              <div className="active-attack-ip">{ip}</div>
+              
+              <div style={{fontSize:12,color:'#a0aec0',marginTop:4}}>
+                {atk.attack_type} | Score: {atk.threat_score}/100
+                | L{atk.mitigation_level} Mitigation
+              </div>
+              
+              {atk.kernel_drops_pkts > 0 && (
+                <div style={{
+                  fontSize:11, color:'#fc8181',
+                  marginTop:4, fontWeight:600
+                }}>
+                  ⚙️ Kernel Drops: {fmtNum(atk.kernel_drops_pkts)} pkts
+                  ({fmtNum(atk.kernel_drops_bytes)} bytes)
+                </div>
+              )}
+              
+              <div style={{fontSize:11,color:'#718096',marginTop:2}}>
+                Since: {atk.started_at}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="card">
+          <div className="card-title">📊 Live Traffic Metrics</div>
+          {metrics ? [
+            ['PPS',           `${Math.round(metrics.pps)} pkt/s`],
+            ['BPS',           `${Math.round(metrics.bps)} B/s`],
+            ['SYN Ratio',     `${(metrics.syn_ratio*100).toFixed(1)}%`],
+            ['UDP Ratio',     `${(metrics.udp_ratio*100).toFixed(1)}%`],
+            ['ICMP Ratio',    `${(metrics.icmp_ratio*100).toFixed(1)}%`],
+            ['Unique IPs',    metrics.unique_ips],
+            ['Total Dropped', `${fmtNum(metrics.total_dropped_pkts||0)} pkts`],
+            ['Last Updated',  metrics.last_updated||'—'],
+          ].map(([k,v]) => (<div key={k} className="metric-row"><span className="metric-label">{k}</span><span className="metric-value">{v}</span></div>))
+          : <div className="empty">Waiting for data...</div>}
+        </div>
+      </div>
+
+      <div style={{padding:'0 24px 16px'}}>
+        <div className="card">
+          <div className="card-title">🚨 Recent Alerts</div>
+          {alerts.length === 0 ? <div className="empty">No alerts — monitoring</div> : (
+            <table className="alert-table">
+              <thead><tr><th>Time</th><th>Source IP</th><th>Attack Type</th><th>Level</th><th>Score + Breakdown</th><th>PPS</th><th>Country</th><th>Mitigation</th></tr></thead>
+              <tbody>
+                {alerts.map(a => (
+                  <tr key={a.id}>
+                    <td style={{color:'#718096',fontSize:12}}>{a.timestamp?.split(' ')[1]||'—'}</td>
+                    <td style={{fontFamily:'monospace',color:'#fc8181'}}>{a.src_ip}</td>
+                    <td><span className="attack-type">{a.attack_type}</span></td>
+                    <td><span className={`badge badge-${a.threat_level}`}>{a.threat_level}</span></td>
+                    <td style={{minWidth:180}}><ScoreBar score={a.threat_score}/><ScoreBreakdown breakdown={a.breakdown}/></td>
+                    <td style={{color:'#63b3ed'}}>{Math.round(a.pps)}</td>
+                    <td style={{color:'#a0aec0'}}>{a.country}</td>
+                    <td><span style={{color: a.mitigation?.level >= 4 ? '#fc8181' : a.mitigation?.level >= 3 ? '#dd6b20' : a.mitigation?.level >= 2 ? '#ecc94b' : '#68d391', fontSize:12, fontWeight:600}}>L{a.mitigation?.level} {a.mitigation?.name}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
+      </div>
+
+      <div style={{padding:'0 24px 24px'}}>
+        <div className="card">
+          <div className="card-title">📁 Forensic Evidence</div>
+          {forensics ? (
+            <div>
+              {[
+                ['PCAP Files', forensics.pcap_files?.length || 0], ['PDF Reports', forensics.pdf_reports?.length || 0], ['Timelines', forensics.timelines?.length || 0],
+              ].map(([k,v]) => (<div key={k} className="metric-row"><span className="metric-label">{k}</span><span className="metric-value">{v} files</span></div>))}
+              {forensics.pcap_files?.slice(0,2).map(f => (
+                <div key={f.filename} style={{marginTop:6, padding:'6px 8px', background:'#2d3748', borderRadius:6, fontSize:11, color:'#a0aec0'}}>
+                  📦 {f.filename} <span style={{color:'#4a5568',marginLeft:8}}>{f.size_kb}KB · {f.created}</span>
+                </div>
+              ))}
+            </div>
+          ) : <div className="empty">No forensic files yet</div>}
+        </div>
+      </div>
+
+      <div className="refresh-bar">Last updated: {lastUpd} | API: {API_BASE}</div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Dashboard/>);
+</script>
+</body>
+</html>

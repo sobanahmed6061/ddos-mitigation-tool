@@ -1,0 +1,61 @@
+
+
+services:
+
+  # ── Sniffer Container ─────────────────────────────────────
+  sniffer:
+    build:
+      context: ./sniffer
+      dockerfile: Dockerfile
+    container_name: ddos_sniffer
+    restart: unless-stopped
+    network_mode: host          # Must use host network for packet sniffing
+    privileged: true            # Required for raw socket access (Scapy)
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./logs:/app/logs        # Persist logs outside container
+      - ./sniffer:/app          # Live code sync (easy editing)
+    environment:
+      - PYTHONUNBUFFERED=1
+      - INTERFACE=enp0s8
+      - BASELINE_FILE=/app/baseline.json
+      - LOG_FILE=/app/logs/hybrid_alerts.log
+      - ABUSEIPDB_KEY=YOUR_ABUSEIPDB_KEY_HERE
+      - REDIS_HOST=localhost
+      - REDIS_PORT=6379
+    depends_on:
+      - influxdb
+      - redis
+
+  # ── InfluxDB Container (Time-Series Database) ─────────────
+  influxdb:
+    image: influxdb:2.7
+    container_name: ddos_influxdb
+    restart: unless-stopped
+    ports:
+      - "8086:8086"             # InfluxDB web UI + API
+    volumes:
+      - ./data/influxdb:/var/lib/influxdb2
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=ddospassword123
+      - DOCKER_INFLUXDB_INIT_ORG=ddos-lab
+      - DOCKER_INFLUXDB_INIT_BUCKET=traffic
+      - DOCKER_INFLUXDB_INIT_RETENTION=30d
+
+  # ── Redis Container (Cache for threat intel later) ─────────
+  redis:
+    image: redis:7-alpine
+    container_name: ddos_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./data/redis:/data
+
+volumes:
+  influxdb_data:
+  redis_data:
+
