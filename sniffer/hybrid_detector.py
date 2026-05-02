@@ -9,6 +9,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 import numpy as np
 import joblib
 import tensorflow as tf
+import time
 from scapy.all         import sniff, IP, TCP, UDP, ICMP
 from feature_extractor import FeatureExtractor
 from threat_intel      import enrich_ip, format_threat_summary
@@ -496,6 +497,20 @@ def handle_packet(pkt):
 # ─────────────────────────────────────────────────────────────
 # Start API server in background
 start_api_server(host="0.0.0.0", port=9999)
+
+start_api_server(host="0.0.0.0", port=8888)
+
+# Start heartbeat thread — keeps dashboard alive during idle
+import threading
+def _heartbeat():
+    while True:
+        time.sleep(5)
+        with state.lock:
+            if state.live_metrics["last_updated"] is None:
+                state.live_metrics["last_updated"] = \
+                    time.strftime("%Y-%m-%d %H:%M:%S")
+
+threading.Thread(target=_heartbeat, daemon=True).start()
 
 print(f"[*] Starting hybrid detection — first {SEQUENCE_LEN} windows warm up LSTM\n")
 # BPF filter — capture attack-relevant traffic only

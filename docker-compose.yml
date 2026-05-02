@@ -11,17 +11,16 @@ services:
     restart: unless-stopped
     network_mode: host          # Must use host network for packet sniffing
     privileged: true            # Required for raw socket access (Scapy)
-    ports:
-      - "8888:8888"
     volumes:
       - ./logs:/app/logs        # Persist logs outside container
       - ./sniffer:/app          # Live code sync (easy editing)
+    env_file:
+      - .env
     environment:
       - PYTHONUNBUFFERED=1
       - INTERFACE=enp0s8
       - BASELINE_FILE=/app/baseline.json
       - LOG_FILE=/app/logs/hybrid_alerts.log
-      - ABUSEIPDB_KEY=YOUR_ABUSEIPDB_KEY_HERE
       - REDIS_HOST=localhost
       - REDIS_PORT=6379
     depends_on:

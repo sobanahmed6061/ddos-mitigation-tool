@@ -1,0 +1,12 @@
+AI-powered network security platform featuring:
+- Hybrid ML detection: Isolation Forest + LSTM (F1=0.98)
+- Random Forest classifier: 6 attack types (100% accuracy)
+- Threat Intelligence: AbuseIPDB + GeoIP + Redis caching
+- Composite threat scoring: 0-100 with breakdown
+- Graduated mitigation: L1 Monitor to L5 NullRoute (iptables)
+- 3-tier whitelist system (CDN ranges + dynamic + admin)
+- PCAP capture + automated forensic PDF reports
+- FastAPI REST API: 14 endpoints + WebSocket streaming
+- SIEM integration: Splunk/ELK/Syslog CEF format
+- React live dashboard with real-time metrics
+- Docker containerization with InfluxDB + Redis"

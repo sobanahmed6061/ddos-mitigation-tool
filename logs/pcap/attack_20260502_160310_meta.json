@@ -1,0 +1,12 @@
+{
+    "attack_id": "20260502_160310",
+    "attack_type": "HTTP_FLOOD",
+    "src_ip": "192.168.56.1",
+    "start_time": "2026-05-02 16:03:10",
+    "start_ts": 1777737790.2973409,
+    "end_time": "2026-05-02 16:04:29",
+    "duration_s": 78.9,
+    "packet_count": 5313,
+    "file_size_kb": 612.0,
+    "pcap_path": "/app/logs/pcap/attack_20260502_160310.pcap"
+}

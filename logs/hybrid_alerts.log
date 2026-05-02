@@ -12641,3 +12641,1409 @@
 2026-04-21 18:53:46,918 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
 2026-04-21 18:53:47,183 - CMD OK: flush all rules for 192.168.56.1
 2026-04-21 18:53:47,183 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-04-26 17:49:17,984 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-26 17:49:18,090 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-26 17:49:18,128 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=28 | threat_level=LOW | ml_pts=6 | type_pts=17 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.8600 | iso_score=-0.0813 | pps=16.89
+2026-04-26 17:49:18,166 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=28 | threat_level=LOW | ml_pts=6 | type_pts=17 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.8600 | iso_score=-0.0668 | pps=14.29
+2026-04-26 17:49:25,585 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=26 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=5 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.6367 | iso_score=-0.0816 | pps=48.59
+2026-04-26 17:49:26,038 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=26 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=5 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.6533 | iso_score=-0.0813 | pps=43.5
+2026-04-26 17:49:36,195 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:49:36,198 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:49:36,587 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:49:36,595 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:49:36,606 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:49:36,612 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:49:36,612 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:49:36,631 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:49:36,639 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:49:36,646 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:49:36,665 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:49:36,672 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:49:36,696 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:49:36,696 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:49:36,712 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:49:36,741 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:49:36,781 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:49:36,794 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:49:37,012 - CMD OK: flush all rules for 192.168.56.1
+2026-04-26 17:49:37,022 - CMD OK: flush all rules for 192.168.56.1
+2026-04-26 17:49:37,031 - CMD OK: L2 throttle 192.168.56.1
+2026-04-26 17:49:37,031 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-26 17:49:37,045 - CMD OK: L2 throttle 192.168.56.1
+2026-04-26 17:49:37,045 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-26 17:49:37,072 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=44 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=8 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.5500 | iso_score=-0.0813 | pps=75.05
+2026-04-26 17:49:37,075 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=41 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=8 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.5233 | iso_score=-0.0816 | pps=99.14
+2026-04-26 17:54:02,509 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:54:02,483 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:54:04,056 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:54:04,301 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:54:04,582 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:54:05,109 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:54:05,213 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:54:05,739 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:54:09,114 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:54:09,268 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:54:09,311 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:54:09,373 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:54:09,536 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:54:09,542 - CMD OK: remove block 192.168.56.1
+2026-04-26 17:54:09,940 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:54:10,004 - CMD OK: remove throttle 192.168.56.1
+2026-04-26 17:54:10,427 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:54:10,769 - CMD OK: remove restrict 192.168.56.1
+2026-04-26 17:54:12,883 - CMD OK: flush all rules for 192.168.56.1
+2026-04-26 17:54:12,883 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-04-26 17:54:12,944 - CMD OK: flush all rules for 192.168.56.1
+2026-04-26 17:54:12,944 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-04-26 17:54:29,700 - L1 MONITOR | ip=114.114.114.114 | action=log_only
+2026-04-26 17:54:29,709 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=30 | threat_level=LOW | ml_pts=19 | type_pts=8 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=0.4900 | iso_score=-0.0642 | pps=7.48
+2026-04-26 17:54:31,928 - L1 MONITOR | ip=114.114.114.114 | action=log_only
+2026-04-26 17:54:32,180 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=27 | threat_level=LOW | ml_pts=16 | type_pts=8 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=0.4767 | iso_score=-0.0560 | pps=6.27
+2026-04-26 17:54:35,580 - CMD OK: remove block 114.114.114.114
+2026-04-26 17:54:35,639 - CMD OK: remove block 114.114.114.114
+2026-04-26 17:54:35,859 - CMD OK: remove throttle 114.114.114.114
+2026-04-26 17:54:36,243 - CMD OK: remove throttle 114.114.114.114
+2026-04-26 17:54:36,291 - CMD OK: remove restrict 114.114.114.114
+2026-04-26 17:54:36,564 - CMD OK: remove restrict 114.114.114.114
+2026-04-26 17:54:36,812 - CMD OK: remove block 114.114.114.114
+2026-04-26 17:54:37,451 - CMD OK: remove block 114.114.114.114
+2026-04-26 17:54:37,741 - CMD OK: remove throttle 114.114.114.114
+2026-04-26 17:54:38,537 - CMD OK: remove throttle 114.114.114.114
+2026-04-26 17:54:38,604 - CMD OK: remove restrict 114.114.114.114
+2026-04-26 17:54:38,844 - CMD OK: remove restrict 114.114.114.114
+2026-04-26 17:54:38,880 - CMD OK: remove block 114.114.114.114
+2026-04-26 17:54:39,068 - CMD OK: remove throttle 114.114.114.114
+2026-04-26 17:54:39,088 - CMD OK: remove block 114.114.114.114
+2026-04-26 17:54:39,220 - CMD OK: remove restrict 114.114.114.114
+2026-04-26 17:54:39,460 - CMD OK: remove throttle 114.114.114.114
+2026-04-26 17:54:39,913 - CMD OK: remove restrict 114.114.114.114
+2026-04-26 17:54:42,110 - CMD OK: flush all rules for 114.114.114.114
+2026-04-26 17:54:42,111 - RELEASE | ip=114.114.114.114 | level=L1 | action=rules_removed
+2026-04-26 17:54:42,826 - CMD OK: flush all rules for 114.114.114.114
+2026-04-26 17:54:42,827 - RELEASE | ip=114.114.114.114 | level=L1 | action=rules_removed
+2026-04-26 17:54:51,875 - L1 MONITOR | ip=114.114.114.114 | action=log_only
+2026-04-26 17:54:51,876 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=37 | threat_level=LOW | ml_pts=19 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=0.5367 | iso_score=-0.0828 | pps=15.17
+2026-04-26 17:54:52,917 - L1 MONITOR | ip=114.114.114.114 | action=log_only
+2026-04-26 17:54:52,917 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=37 | threat_level=LOW | ml_pts=19 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=0.5367 | iso_score=-0.0801 | pps=18.67
+2026-04-26 18:01:59,432 - CMD OK: remove block 114.114.114.114
+2026-04-26 18:01:59,448 - CMD OK: remove throttle 114.114.114.114
+2026-04-26 18:01:59,454 - CMD OK: remove restrict 114.114.114.114
+2026-04-26 18:01:59,461 - CMD OK: remove block 114.114.114.114
+2026-04-26 18:01:59,467 - CMD OK: remove throttle 114.114.114.114
+2026-04-26 18:01:59,472 - CMD OK: remove restrict 114.114.114.114
+2026-04-26 18:01:59,476 - CMD OK: remove block 114.114.114.114
+2026-04-26 18:01:59,481 - CMD OK: remove throttle 114.114.114.114
+2026-04-26 18:01:59,486 - CMD OK: remove restrict 114.114.114.114
+2026-04-26 18:01:59,574 - CMD OK: flush all rules for 114.114.114.114
+2026-04-26 18:01:59,575 - RELEASE | ip=114.114.114.114 | level=L1 | action=rules_removed
+2026-04-28 15:32:41,701 - L1 MONITOR | ip=114.114.114.114 | action=log_only
+2026-04-28 15:32:41,748 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.6833 | iso_score=-0.0735 | pps=17.52
+2026-04-28 15:32:43,076 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:32:44,234 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:32:44,466 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:32:44,565 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:32:44,713 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:32:44,898 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:32:45,111 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:32:45,298 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:32:45,959 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:32:46,287 - L1 MONITOR | ip=114.114.114.114 | action=log_only
+2026-04-28 15:32:46,287 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.6833 | iso_score=-0.0745 | pps=12.46
+2026-04-28 15:32:47,747 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:32:48,086 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:32:48,141 - CMD OK: flush all rules for 114.114.114.114
+2026-04-28 15:32:48,141 - RELEASE | ip=114.114.114.114 | level=L1 | action=rules_removed
+2026-04-28 15:32:49,242 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:32:49,798 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:32:50,255 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:32:50,861 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:32:51,082 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:32:51,616 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:32:52,449 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:32:53,999 - CMD OK: flush all rules for 114.114.114.114
+2026-04-28 15:32:53,999 - RELEASE | ip=114.114.114.114 | level=L1 | action=rules_removed
+2026-04-28 15:32:55,534 - L1 MONITOR | ip=114.114.114.114 | action=log_only
+2026-04-28 15:32:55,535 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=28 | threat_level=LOW | ml_pts=6 | type_pts=17 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.7000 | iso_score=-0.0735 | pps=19.27
+2026-04-28 15:33:01,512 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.5367 | iso_score=-0.0766 | pps=12.25
+2026-04-28 15:33:06,052 - L1 MONITOR | ip=114.114.114.114 | action=log_only
+2026-04-28 15:33:06,058 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.5367 | iso_score=-0.0856 | pps=13.59
+2026-04-28 15:33:34,204 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:33:34,203 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:33:35,982 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:33:36,423 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:33:38,802 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:33:38,831 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:33:42,295 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:33:42,515 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:33:43,946 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:33:44,910 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:33:47,183 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:33:47,786 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:33:49,982 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:33:50,971 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:33:54,564 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:33:55,833 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:33:59,508 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:33:59,699 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:34:06,553 - CMD TIMEOUT: flush all rules for 114.114.114.114
+2026-04-28 15:34:06,214 - CMD TIMEOUT: flush all rules for 114.114.114.114
+2026-04-28 15:34:14,414 - CMD TIMEOUT: L2 throttle 114.114.114.114
+2026-04-28 15:34:17,514 - CMD TIMEOUT: L2 throttle 114.114.114.114
+2026-04-28 15:34:19,446 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=41 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=1 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=? | clf_conf=0.5133 | iso_score=-0.0765 | pps=8.72
+2026-04-28 15:34:20,136 - HYBRID ALERT | type=SYN_FLOOD | src_ip=114.114.114.114 | threat_score=41 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=5 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=? | clf_conf=0.6533 | iso_score=-0.0686 | pps=29.33
+2026-04-28 15:35:02,784 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:35:02,718 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:35:05,578 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:35:05,701 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:35:08,311 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:35:08,751 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:35:09,725 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:35:09,805 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:35:11,157 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:35:11,240 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:35:12,453 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:35:12,536 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:35:13,826 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:35:14,558 - CMD OK: remove block 114.114.114.114
+2026-04-28 15:35:15,096 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:35:17,180 - CMD OK: remove throttle 114.114.114.114
+2026-04-28 15:35:17,678 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:35:18,751 - CMD OK: remove restrict 114.114.114.114
+2026-04-28 15:35:23,612 - CMD TIMEOUT: flush all rules for 114.114.114.114
+2026-04-28 15:35:23,612 - RELEASE | ip=114.114.114.114 | level=L2 | action=rules_removed
+2026-04-28 15:35:24,397 - CMD TIMEOUT: flush all rules for 114.114.114.114
+2026-04-28 15:35:24,775 - RELEASE | ip=114.114.114.114 | level=L2 | action=rules_removed
+2026-04-30 20:01:18,494 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:01:18,733 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=28 | threat_level=LOW | ml_pts=6 | type_pts=17 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.8533 | iso_score=-0.0738 | pps=11.37
+2026-04-30 20:01:22,644 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:01:22,681 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=28 | threat_level=LOW | ml_pts=6 | type_pts=17 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.8267 | iso_score=-0.0735 | pps=10.11
+2026-04-30 20:01:34,208 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:01:34,339 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:01:34,349 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:01:34,363 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:01:34,386 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:01:34,407 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:01:34,422 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:01:34,443 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:01:34,448 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:01:34,660 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:01:34,681 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:01:34,682 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:01:34,718 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=40 | threat_level=MEDIUM | ml_pts=16 | type_pts=17 | pps_pts=3 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.8800 | iso_score=-0.0875 | pps=16.19
+2026-04-30 20:01:35,813 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:01:35,857 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:01:35,874 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:01:35,899 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:01:35,956 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:01:35,963 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:01:35,969 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:01:35,974 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:01:35,979 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:01:35,997 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:01:35,997 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-04-30 20:01:38,577 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=36 | threat_level=LOW | ml_pts=16 | type_pts=8 | pps_pts=8 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.4467 | iso_score=-0.0808 | pps=78.59
+2026-04-30 20:01:42,835 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:01:42,842 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:01:42,852 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:01:42,870 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:01:42,890 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:01:42,904 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:01:42,922 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:01:42,925 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:01:42,936 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:01:42,986 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:01:42,993 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:01:42,993 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:01:43,007 - HYBRID ALERT | type=SYN_FLOOD | src_ip=192.168.56.1 | threat_score=40 | threat_level=MEDIUM | ml_pts=16 | type_pts=17 | pps_pts=5 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.7300 | iso_score=-0.0836 | pps=21.11
+2026-04-30 20:02:58,647 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:02:58,672 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:02:58,693 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:02:58,707 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:02:58,725 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:02:58,739 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:02:58,747 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:02:58,763 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:02:58,780 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:02:58,890 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:02:58,890 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-04-30 20:02:59,312 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:02:59,394 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:02:59,423 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:02:59,456 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:02:59,497 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:02:59,517 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:02:59,538 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:02:59,557 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:02:59,572 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:02:59,628 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:02:59,644 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:02:59,644 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:02:59,687 - HYBRID ALERT | type=UNKNOWN | src_ip=192.168.56.1 | threat_score=41 | threat_level=MEDIUM | ml_pts=22 | type_pts=6 | pps_pts=1 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.5133 | iso_score=-0.0969 | pps=1.51
+2026-04-30 20:03:04,928 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:03:04,987 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:03:05,001 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:03:05,006 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:03:05,014 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:03:05,019 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:03:05,024 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:03:05,033 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:03:05,038 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:03:05,065 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:03:05,065 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-04-30 20:04:52,469 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:04:52,568 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=32 | threat_level=LOW | ml_pts=22 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.3433 | iso_score=-0.1378 | pps=2.51
+2026-04-30 20:04:53,882 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:04:54,116 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.3433 | iso_score=-0.1378 | pps=2.58
+2026-04-30 20:05:02,174 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:02,660 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:03,031 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:03,218 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:03,451 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:04,220 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:04,227 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:04,846 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:05,394 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:05,510 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:07,543 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:09,424 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:09,578 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:05:09,655 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-04-30 20:05:09,849 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:10,399 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:10,983 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:11,872 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:12,717 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:12,833 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:13,062 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:05:13,063 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-04-30 20:05:38,070 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:05:38,091 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.3367 | iso_score=-0.1400 | pps=4.97
+2026-04-30 20:05:38,302 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:05:38,380 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.3367 | iso_score=-0.1400 | pps=5.12
+2026-04-30 20:05:43,108 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.4033 | iso_score=-0.1201 | pps=5.96
+2026-04-30 20:05:43,649 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:43,848 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:43,892 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:44,002 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:44,117 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:44,305 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:44,400 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:44,419 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:44,453 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:45,041 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:05:45,110 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:05:45,110 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:05:45,218 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=41 | threat_level=MEDIUM | ml_pts=25 | type_pts=11 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5100 | iso_score=-0.1332 | pps=14.79
+2026-04-30 20:05:47,337 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:47,453 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:47,518 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:47,531 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:47,574 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:47,584 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:47,643 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:47,676 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:47,754 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:47,792 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:47,883 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:47,908 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:48,124 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:48,136 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:48,343 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:48,528 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:48,540 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:48,728 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:48,764 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:05:48,767 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-04-30 20:05:49,201 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:05:49,211 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:05:49,212 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:05:49,229 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=43 | threat_level=MEDIUM | ml_pts=25 | type_pts=11 | pps_pts=3 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.5700 | iso_score=-0.1332 | pps=14.79
+2026-04-30 20:05:52,339 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:05:52,360 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:05:52,361 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.4333 | iso_score=-0.1261 | pps=1.2
+2026-04-30 20:05:52,381 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=34 | threat_level=LOW | ml_pts=22 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.3567 | iso_score=-0.1200 | pps=7.38
+2026-04-30 20:05:58,009 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=39 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=5 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.4500 | iso_score=-0.1224 | pps=22.78
+2026-04-30 20:05:58,168 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:58,323 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:58,514 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:58,676 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:58,845 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:59,104 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:59,168 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:05:59,285 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:05:59,493 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:05:59,961 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:06:00,295 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:06:00,296 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:06:00,659 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=45 | threat_level=MEDIUM | ml_pts=25 | type_pts=7 | pps_pts=5 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.4933 | iso_score=-0.1313 | pps=20.89
+2026-04-30 20:06:03,562 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:03,691 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:03,722 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:03,807 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:03,822 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:03,901 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:03,915 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:03,963 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:04,059 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:04,075 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:04,125 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:04,148 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:04,257 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:04,270 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:04,309 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:04,344 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:04,357 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:04,377 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:04,412 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:06:04,427 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:06:04,427 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:06:04,447 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:06:04,448 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-04-30 20:06:04,456 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=45 | threat_level=MEDIUM | ml_pts=25 | type_pts=11 | pps_pts=5 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.5067 | iso_score=-0.1313 | pps=22.11
+2026-04-30 20:06:46,988 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:06:46,989 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.3000 | iso_score=-0.1383 | pps=2.29
+2026-04-30 20:06:47,007 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=41 | threat_level=MEDIUM | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.3000 | iso_score=-0.1375 | pps=2.3
+2026-04-30 20:06:53,172 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:53,186 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:53,191 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:53,201 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:53,208 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:53,216 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:53,221 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:53,225 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:53,231 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:53,249 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:06:53,249 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-04-30 20:06:53,341 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:53,356 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:53,366 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:53,379 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:53,383 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:53,388 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:53,392 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:06:53,397 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:06:53,402 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:06:53,420 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:06:53,420 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-04-30 20:07:41,960 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:07:41,960 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=39 | threat_level=LOW | ml_pts=19 | type_pts=10 | pps_pts=8 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5233 | iso_score=-0.0728 | pps=96.88
+2026-04-30 20:07:42,003 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:07:42,006 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=19 | type_pts=9 | pps_pts=5 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.6233 | iso_score=-0.0644 | pps=46.04
+2026-04-30 20:07:49,362 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=37 | threat_level=LOW | ml_pts=13 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.6667 | iso_score=-0.0552 | pps=172.24
+2026-04-30 20:07:49,705 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:07:49,768 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:07:49,784 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:07:49,816 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:07:49,866 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:07:49,916 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:07:49,936 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:07:50,010 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:07:50,064 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:07:50,248 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:07:50,307 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:07:50,307 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:07:50,367 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=47 | threat_level=MEDIUM | ml_pts=13 | type_pts=16 | pps_pts=16 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.9100 | iso_score=-0.0534 | pps=234.15
+2026-04-30 20:07:53,962 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:07:54,004 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:07:54,026 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:07:54,074 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:07:54,083 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:07:54,136 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:07:54,180 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:07:54,426 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:07:54,774 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:07:55,127 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:07:55,223 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:07:55,224 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:07:55,396 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=43 | threat_level=MEDIUM | ml_pts=13 | type_pts=10 | pps_pts=16 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.6967 | iso_score=-0.0663 | pps=226.41
+2026-04-30 20:07:56,108 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=49 | threat_level=MEDIUM | ml_pts=16 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.7467 | iso_score=-0.0737 | pps=262.2
+2026-04-30 20:08:01,594 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=43 | threat_level=MEDIUM | ml_pts=10 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.7633 | iso_score=-0.0576 | pps=231.49
+2026-04-30 20:08:03,610 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=49 | threat_level=MEDIUM | ml_pts=16 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.8067 | iso_score=-0.0812 | pps=356.27
+2026-04-30 20:08:05,603 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=16 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.8233 | iso_score=-0.0670 | pps=231.52
+2026-04-30 20:08:08,725 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=16 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.7900 | iso_score=-0.0802 | pps=271.35
+2026-04-30 20:08:11,902 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=16 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.8267 | iso_score=-0.0797 | pps=318.64
+2026-04-30 20:08:14,753 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=16 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.7833 | iso_score=-0.0727 | pps=266.82
+2026-04-30 20:08:19,068 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:19,087 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:19,117 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:19,171 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:19,301 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:19,415 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:19,515 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:19,540 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:19,630 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:20,133 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:08:20,234 - CMD OK: L3 restrict 192.168.56.1
+2026-04-30 20:08:20,235 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-04-30 20:08:20,335 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=56 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.8533 | iso_score=-0.0786 | pps=312.51
+2026-04-30 20:08:21,860 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:21,868 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:21,882 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:21,898 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:21,906 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:21,916 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:21,935 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:21,954 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:21,988 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:22,169 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:08:22,202 - CMD OK: L3 restrict 192.168.56.1
+2026-04-30 20:08:22,203 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-04-30 20:08:22,247 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=56 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.8467 | iso_score=-0.0700 | pps=299.74
+2026-04-30 20:08:23,993 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:24,002 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:24,057 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:24,075 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:24,083 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:24,092 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:24,099 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:24,106 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:24,113 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:24,156 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:08:24,178 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:08:24,178 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:08:24,301 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=49 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.5367 | iso_score=-0.0655 | pps=126.39
+2026-04-30 20:08:27,528 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:27,535 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:27,546 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:27,550 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:27,560 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:27,583 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:27,612 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:27,625 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:27,675 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:27,829 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:08:27,908 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:08:27,910 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:08:27,979 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=45 | threat_level=MEDIUM | ml_pts=19 | type_pts=6 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.4300 | iso_score=-0.0784 | pps=147.17
+2026-04-30 20:08:29,970 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=49 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.6033 | iso_score=-0.0694 | pps=188.29
+2026-04-30 20:08:33,824 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.6633 | iso_score=-0.0786 | pps=202.09
+2026-04-30 20:08:35,797 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.6400 | iso_score=-0.0786 | pps=187.72
+2026-04-30 20:08:39,328 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:39,344 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:39,353 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:39,362 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:39,374 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:39,411 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:39,443 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:39,471 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:39,500 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:39,740 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:08:39,794 - CMD OK: L3 restrict 192.168.56.1
+2026-04-30 20:08:39,794 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-04-30 20:08:39,840 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=57 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=16 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.6633 | iso_score=-0.0638 | pps=213.98
+2026-04-30 20:08:41,884 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=54 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=16 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.6467 | iso_score=-0.0582 | pps=210.63
+2026-04-30 20:08:44,739 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:44,745 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:44,757 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:44,798 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:44,815 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:44,840 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:44,855 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:44,893 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:44,920 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:45,173 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:08:45,198 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:08:45,198 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:08:45,285 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=49 | threat_level=MEDIUM | ml_pts=19 | type_pts=6 | pps_pts=12 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.4133 | iso_score=-0.0643 | pps=138.5
+2026-04-30 20:08:48,192 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:48,205 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:48,214 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:48,221 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:48,231 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:48,237 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:48,247 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:48,274 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:48,306 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:48,534 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:08:48,954 - CMD OK: L3 restrict 192.168.56.1
+2026-04-30 20:08:48,954 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-04-30 20:08:49,326 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=57 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=16 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.6600 | iso_score=-0.0675 | pps=211.96
+2026-04-30 20:08:56,628 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:56,639 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:56,650 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:56,664 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:56,675 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:56,687 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:56,699 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:56,714 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:56,740 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:56,901 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:08:57,168 - CMD OK: L3 restrict 192.168.56.1
+2026-04-30 20:08:57,170 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-04-30 20:08:57,450 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=60 | threat_level=HIGH | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.7233 | iso_score=-0.0653 | pps=238.33
+2026-04-30 20:08:57,981 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:58,133 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:58,152 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:58,165 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:58,190 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:58,246 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:58,378 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:08:58,536 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:08:58,563 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:08:58,883 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:08:59,021 - CMD OK: L2 throttle 192.168.56.1
+2026-04-30 20:08:59,021 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-04-30 20:08:59,241 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.5367 | iso_score=-0.0858 | pps=118.32
+2026-04-30 20:09:05,348 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:09:05,348 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:09:05,395 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:09:05,409 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:09:05,410 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:09:05,419 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:09:05,427 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:09:05,431 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:09:05,437 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:09:05,457 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:09:05,459 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:09:05,480 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:09:05,478 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:09:05,553 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:09:05,594 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:09:05,597 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:09:05,660 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:09:05,664 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:09:06,101 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:09:06,102 - RELEASE | ip=192.168.56.1 | level=L3 | action=rules_removed
+2026-04-30 20:09:06,150 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:09:06,151 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-04-30 20:11:25,683 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:11:25,682 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:11:25,713 - HYBRID ALERT | type= | src_ip=192.168.56.1 | threat_score=25 | threat_level=LOW | ml_pts=22 | type_pts=0 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.6533 | iso_score=-0.1178 | pps=1.03
+2026-04-30 20:11:25,714 - HYBRID ALERT | type=UNKNOWN | src_ip=192.168.56.1 | threat_score=31 | threat_level=LOW | ml_pts=22 | type_pts=6 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5267 | iso_score=-0.1007 | pps=1.05
+2026-04-30 20:13:09,949 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:13:09,950 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:13:11,008 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:13:11,008 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:13:11,319 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:13:11,315 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:13:11,359 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:13:11,359 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:13:11,371 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:13:11,380 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:13:11,508 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:13:11,509 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:13:11,581 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:13:11,582 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:13:11,600 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:13:11,607 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:13:11,628 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:13:11,652 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:13:11,900 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:13:11,900 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-04-30 20:13:11,918 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:13:11,919 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-04-30 20:21:56,656 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:21:56,661 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.3300 | iso_score=-0.1247 | pps=1.05
+2026-04-30 20:21:56,656 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-04-30 20:21:56,664 - HYBRID ALERT | type=UDP_FLOOD | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.3300 | iso_score=-0.1247 | pps=1.05
+2026-04-30 20:21:58,823 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:21:58,822 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:21:58,843 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:21:58,846 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:21:58,870 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:21:58,874 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:21:58,885 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:21:58,913 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:21:58,925 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:21:58,945 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:21:58,948 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:21:58,993 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:21:58,995 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:21:59,029 - CMD OK: remove block 192.168.56.1
+2026-04-30 20:21:59,043 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:21:59,055 - CMD OK: remove throttle 192.168.56.1
+2026-04-30 20:21:59,061 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:21:59,066 - CMD OK: remove restrict 192.168.56.1
+2026-04-30 20:21:59,195 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:21:59,197 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-04-30 20:21:59,213 - CMD OK: flush all rules for 192.168.56.1
+2026-04-30 20:21:59,213 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-04-30 20:32:25,415 - L1 MONITOR | ip=5.8.88.88 | action=log_only
+2026-04-30 20:32:25,433 - HYBRID ALERT | type=SYN_FLOOD | src_ip=5.8.88.88 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.6900 | iso_score=-0.0735 | pps=16.6
+2026-04-30 20:32:25,443 - L1 MONITOR | ip=5.8.88.88 | action=log_only
+2026-04-30 20:32:25,528 - HYBRID ALERT | type=SYN_FLOOD | src_ip=5.8.88.88 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.6833 | iso_score=-0.0735 | pps=15.65
+2026-04-30 20:32:26,164 - CMD OK: remove block 5.8.88.88
+2026-04-30 20:32:26,177 - CMD OK: remove block 5.8.88.88
+2026-04-30 20:32:26,312 - CMD OK: remove throttle 5.8.88.88
+2026-04-30 20:32:26,323 - CMD OK: remove restrict 5.8.88.88
+2026-04-30 20:32:26,325 - CMD OK: remove throttle 5.8.88.88
+2026-04-30 20:32:26,335 - CMD OK: remove block 5.8.88.88
+2026-04-30 20:32:26,349 - CMD OK: remove throttle 5.8.88.88
+2026-04-30 20:32:26,360 - CMD OK: remove restrict 5.8.88.88
+2026-04-30 20:32:26,374 - CMD OK: remove restrict 5.8.88.88
+2026-04-30 20:32:26,390 - CMD OK: remove block 5.8.88.88
+2026-04-30 20:32:26,393 - CMD OK: remove block 5.8.88.88
+2026-04-30 20:32:26,414 - CMD OK: remove throttle 5.8.88.88
+2026-04-30 20:32:26,428 - CMD OK: remove throttle 5.8.88.88
+2026-04-30 20:32:26,437 - CMD OK: remove restrict 5.8.88.88
+2026-04-30 20:32:26,443 - CMD OK: remove restrict 5.8.88.88
+2026-04-30 20:32:26,512 - CMD OK: remove block 5.8.88.88
+2026-04-30 20:32:26,575 - CMD OK: flush all rules for 5.8.88.88
+2026-04-30 20:32:26,575 - RELEASE | ip=5.8.88.88 | level=L1 | action=rules_removed
+2026-04-30 20:32:26,581 - CMD OK: remove throttle 5.8.88.88
+2026-04-30 20:32:26,605 - CMD OK: remove restrict 5.8.88.88
+2026-04-30 20:32:26,826 - CMD OK: flush all rules for 5.8.88.88
+2026-04-30 20:32:26,828 - RELEASE | ip=5.8.88.88 | level=L1 | action=rules_removed
+2026-04-30 20:33:54,836 - L1 MONITOR | ip=1.180.0.1 | action=log_only
+2026-04-30 20:33:54,873 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=37 | threat_level=LOW | ml_pts=12 | type_pts=18 | pps_pts=5 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=1.0000 | iso_score=-0.1222 | pps=40.11
+2026-04-30 20:33:55,245 - CMD OK: remove block 1.180.0.1
+2026-04-30 20:33:55,339 - CMD OK: remove throttle 1.180.0.1
+2026-04-30 20:33:55,412 - CMD OK: remove restrict 1.180.0.1
+2026-04-30 20:33:55,535 - CMD OK: remove block 1.180.0.1
+2026-04-30 20:33:55,669 - CMD OK: remove throttle 1.180.0.1
+2026-04-30 20:33:55,792 - CMD OK: remove restrict 1.180.0.1
+2026-04-30 20:33:55,846 - CMD OK: remove block 1.180.0.1
+2026-04-30 20:33:55,933 - CMD OK: remove throttle 1.180.0.1
+2026-04-30 20:33:56,059 - CMD OK: remove restrict 1.180.0.1
+2026-04-30 20:33:56,708 - CMD OK: flush all rules for 1.180.0.1
+2026-04-30 20:33:56,979 - CMD OK: L2 throttle 1.180.0.1
+2026-04-30 20:33:56,980 - L2 THROTTLE | ip=1.180.0.1 | limit=50pps | burst=100
+2026-04-30 20:33:57,309 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=40 | threat_level=MEDIUM | ml_pts=12 | type_pts=18 | pps_pts=8 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=1.0000 | iso_score=-0.1258 | pps=52.36
+2026-04-30 20:35:04,344 - CMD OK: remove block 1.180.0.1
+2026-04-30 20:35:04,353 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=45 | threat_level=MEDIUM | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=? | clf_conf=0.3667 | iso_score=-0.1335 | pps=4.33
+2026-04-30 20:35:04,377 - CMD OK: remove throttle 1.180.0.1
+2026-04-30 20:35:04,382 - CMD OK: remove restrict 1.180.0.1
+2026-04-30 20:35:04,393 - CMD OK: remove block 1.180.0.1
+2026-04-30 20:35:04,398 - CMD OK: remove throttle 1.180.0.1
+2026-04-30 20:35:04,409 - CMD OK: remove restrict 1.180.0.1
+2026-04-30 20:35:04,413 - CMD OK: remove block 1.180.0.1
+2026-04-30 20:35:04,422 - CMD OK: remove throttle 1.180.0.1
+2026-04-30 20:35:04,429 - CMD OK: remove restrict 1.180.0.1
+2026-04-30 20:35:04,462 - CMD OK: flush all rules for 1.180.0.1
+2026-04-30 20:35:04,479 - CMD OK: L2 throttle 1.180.0.1
+2026-04-30 20:35:04,479 - L2 THROTTLE | ip=1.180.0.1 | limit=50pps | burst=100
+2026-04-30 20:35:04,547 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=45 | threat_level=MEDIUM | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=? | clf_conf=0.3233 | iso_score=-0.1354 | pps=2.68
+2026-04-30 20:36:31,094 - L1 MONITOR | ip=45.227.255.206 | action=log_only
+2026-04-30 20:36:31,094 - HYBRID ALERT | type=UNKNOWN | src_ip=45.227.255.206 | threat_score=23 | threat_level=LOW | ml_pts=16 | type_pts=4 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.4333 | iso_score=-0.0463 | pps=4.16
+2026-04-30 20:36:33,920 - CMD OK: remove block 45.227.255.206
+2026-04-30 20:36:33,926 - CMD OK: remove throttle 45.227.255.206
+2026-04-30 20:36:33,936 - CMD OK: remove restrict 45.227.255.206
+2026-04-30 20:36:33,942 - CMD OK: remove block 45.227.255.206
+2026-04-30 20:36:33,952 - CMD OK: remove throttle 45.227.255.206
+2026-04-30 20:36:33,956 - CMD OK: remove restrict 45.227.255.206
+2026-04-30 20:36:33,961 - CMD OK: remove block 45.227.255.206
+2026-04-30 20:36:33,971 - CMD OK: remove throttle 45.227.255.206
+2026-04-30 20:36:33,976 - CMD OK: remove restrict 45.227.255.206
+2026-04-30 20:36:34,005 - CMD OK: flush all rules for 45.227.255.206
+2026-04-30 20:36:34,006 - RELEASE | ip=45.227.255.206 | level=L1 | action=rules_removed
+2026-04-30 20:36:34,286 - L1 MONITOR | ip=45.227.255.206 | action=log_only
+2026-04-30 20:36:34,292 - HYBRID ALERT | type=UNKNOWN | src_ip=45.227.255.206 | threat_score=23 | threat_level=LOW | ml_pts=16 | type_pts=4 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.4300 | iso_score=-0.0343 | pps=3.36
+2026-04-30 20:36:34,775 - CMD OK: remove block 45.227.255.206
+2026-04-30 20:36:34,793 - CMD OK: remove throttle 45.227.255.206
+2026-04-30 20:36:34,823 - CMD OK: remove restrict 45.227.255.206
+2026-04-30 20:36:34,849 - CMD OK: remove block 45.227.255.206
+2026-04-30 20:36:34,856 - CMD OK: remove throttle 45.227.255.206
+2026-04-30 20:36:34,861 - CMD OK: remove restrict 45.227.255.206
+2026-04-30 20:36:34,870 - CMD OK: remove block 45.227.255.206
+2026-04-30 20:36:34,875 - CMD OK: remove throttle 45.227.255.206
+2026-04-30 20:36:34,885 - CMD OK: remove restrict 45.227.255.206
+2026-04-30 20:36:34,922 - CMD OK: flush all rules for 45.227.255.206
+2026-04-30 20:36:34,923 - RELEASE | ip=45.227.255.206 | level=L1 | action=rules_removed
+2026-04-30 20:37:48,852 - L1 MONITOR | ip=45.227.255.206 | action=log_only
+2026-04-30 20:37:48,857 - HYBRID ALERT | type=UNKNOWN | src_ip=45.227.255.206 | threat_score=31 | threat_level=LOW | ml_pts=22 | type_pts=6 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.5033 | iso_score=-0.1029 | pps=1.35
+2026-04-30 20:37:48,987 - L1 MONITOR | ip=45.227.255.206 | action=log_only
+2026-04-30 20:37:48,988 - HYBRID ALERT | type=UNKNOWN | src_ip=45.227.255.206 | threat_score=28 | threat_level=LOW | ml_pts=19 | type_pts=6 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=? | clf_conf=0.5033 | iso_score=-0.1029 | pps=1.4
+2026-05-01 20:33:51,632 - SYN FLOOD from 192.168.56.1 | count=51 | threshold=50
+2026-05-01 20:33:51,639 - SYN FLOOD from 192.168.56.1 | count=52 | threshold=50
+2026-05-01 20:33:51,640 - SYN FLOOD from 192.168.56.1 | count=53 | threshold=50
+2026-05-01 20:33:51,643 - SYN FLOOD from 192.168.56.1 | count=54 | threshold=50
+2026-05-01 20:33:54,632 - SYN FLOOD from 192.168.56.1 | count=55 | threshold=50
+2026-05-01 20:33:54,639 - SYN FLOOD from 192.168.56.1 | count=56 | threshold=50
+2026-05-01 20:33:54,643 - SYN FLOOD from 192.168.56.1 | count=57 | threshold=50
+2026-05-01 20:33:54,644 - SYN FLOOD from 192.168.56.1 | count=58 | threshold=50
+2026-05-01 20:33:54,648 - SYN FLOOD from 192.168.56.1 | count=59 | threshold=50
+2026-05-01 20:33:57,618 - SYN FLOOD from 192.168.56.1 | count=60 | threshold=50
+2026-05-01 20:33:57,620 - SYN FLOOD from 192.168.56.1 | count=61 | threshold=50
+2026-05-01 20:33:57,621 - SYN FLOOD from 192.168.56.1 | count=62 | threshold=50
+2026-05-01 20:33:57,624 - SYN FLOOD from 192.168.56.1 | count=63 | threshold=50
+2026-05-01 20:33:57,625 - SYN FLOOD from 192.168.56.1 | count=64 | threshold=50
+2026-05-01 20:34:00,633 - SYN FLOOD from 192.168.56.1 | count=65 | threshold=50
+2026-05-01 20:34:00,641 - SYN FLOOD from 192.168.56.1 | count=66 | threshold=50
+2026-05-01 20:34:00,645 - SYN FLOOD from 192.168.56.1 | count=67 | threshold=50
+2026-05-01 20:34:00,647 - SYN FLOOD from 192.168.56.1 | count=68 | threshold=50
+2026-05-01 20:34:00,649 - SYN FLOOD from 192.168.56.1 | count=69 | threshold=50
+2026-05-01 20:34:03,634 - SYN FLOOD from 192.168.56.1 | count=70 | threshold=50
+2026-05-01 20:34:03,642 - SYN FLOOD from 192.168.56.1 | count=71 | threshold=50
+2026-05-01 20:34:03,645 - SYN FLOOD from 192.168.56.1 | count=72 | threshold=50
+2026-05-01 20:34:03,647 - SYN FLOOD from 192.168.56.1 | count=73 | threshold=50
+2026-05-01 20:34:03,650 - SYN FLOOD from 192.168.56.1 | count=74 | threshold=50
+2026-05-01 20:34:06,636 - SYN FLOOD from 192.168.56.1 | count=75 | threshold=50
+2026-05-01 20:34:06,647 - SYN FLOOD from 192.168.56.1 | count=76 | threshold=50
+2026-05-01 20:34:06,649 - SYN FLOOD from 192.168.56.1 | count=77 | threshold=50
+2026-05-01 20:34:06,651 - SYN FLOOD from 192.168.56.1 | count=78 | threshold=50
+2026-05-01 20:34:06,653 - SYN FLOOD from 192.168.56.1 | count=79 | threshold=50
+2026-05-01 20:34:09,629 - SYN FLOOD from 192.168.56.1 | count=80 | threshold=50
+2026-05-01 20:34:09,641 - SYN FLOOD from 192.168.56.1 | count=81 | threshold=50
+2026-05-01 20:34:09,646 - SYN FLOOD from 192.168.56.1 | count=82 | threshold=50
+2026-05-01 20:34:09,649 - SYN FLOOD from 192.168.56.1 | count=83 | threshold=50
+2026-05-01 20:34:09,652 - SYN FLOOD from 192.168.56.1 | count=84 | threshold=50
+2026-05-01 20:34:12,639 - SYN FLOOD from 192.168.56.1 | count=85 | threshold=50
+2026-05-01 20:34:12,646 - SYN FLOOD from 192.168.56.1 | count=86 | threshold=50
+2026-05-01 20:34:12,650 - SYN FLOOD from 192.168.56.1 | count=87 | threshold=50
+2026-05-01 20:34:12,651 - SYN FLOOD from 192.168.56.1 | count=88 | threshold=50
+2026-05-01 20:34:12,652 - SYN FLOOD from 192.168.56.1 | count=89 | threshold=50
+2026-05-01 20:34:15,639 - SYN FLOOD from 192.168.56.1 | count=90 | threshold=50
+2026-05-01 20:34:15,643 - SYN FLOOD from 192.168.56.1 | count=91 | threshold=50
+2026-05-01 20:34:15,646 - SYN FLOOD from 192.168.56.1 | count=92 | threshold=50
+2026-05-01 20:34:15,647 - SYN FLOOD from 192.168.56.1 | count=93 | threshold=50
+2026-05-01 20:34:15,648 - SYN FLOOD from 192.168.56.1 | count=94 | threshold=50
+2026-05-01 20:34:18,638 - SYN FLOOD from 192.168.56.1 | count=95 | threshold=50
+2026-05-01 20:34:18,648 - SYN FLOOD from 192.168.56.1 | count=96 | threshold=50
+2026-05-01 20:34:18,650 - SYN FLOOD from 192.168.56.1 | count=97 | threshold=50
+2026-05-01 20:34:18,654 - SYN FLOOD from 192.168.56.1 | count=98 | threshold=50
+2026-05-01 20:34:18,655 - SYN FLOOD from 192.168.56.1 | count=99 | threshold=50
+2026-05-01 20:34:21,636 - SYN FLOOD from 192.168.56.1 | count=100 | threshold=50
+2026-05-01 20:34:21,645 - SYN FLOOD from 192.168.56.1 | count=101 | threshold=50
+2026-05-01 20:34:21,647 - SYN FLOOD from 192.168.56.1 | count=102 | threshold=50
+2026-05-01 20:34:21,649 - SYN FLOOD from 192.168.56.1 | count=103 | threshold=50
+2026-05-01 20:34:21,652 - SYN FLOOD from 192.168.56.1 | count=104 | threshold=50
+2026-05-01 20:34:24,644 - SYN FLOOD from 192.168.56.1 | count=105 | threshold=50
+2026-05-01 20:34:24,650 - SYN FLOOD from 192.168.56.1 | count=106 | threshold=50
+2026-05-01 20:34:24,655 - SYN FLOOD from 192.168.56.1 | count=107 | threshold=50
+2026-05-01 20:34:24,659 - SYN FLOOD from 192.168.56.1 | count=108 | threshold=50
+2026-05-01 20:34:24,660 - SYN FLOOD from 192.168.56.1 | count=109 | threshold=50
+2026-05-01 20:34:27,641 - SYN FLOOD from 192.168.56.1 | count=110 | threshold=50
+2026-05-01 20:34:27,648 - SYN FLOOD from 192.168.56.1 | count=111 | threshold=50
+2026-05-01 20:34:27,651 - SYN FLOOD from 192.168.56.1 | count=112 | threshold=50
+2026-05-01 20:34:27,652 - SYN FLOOD from 192.168.56.1 | count=113 | threshold=50
+2026-05-01 20:34:27,654 - SYN FLOOD from 192.168.56.1 | count=114 | threshold=50
+2026-05-01 20:34:33,269 - SYN FLOOD from 192.168.56.1 | count=115 | threshold=50
+2026-05-01 20:34:33,277 - SYN FLOOD from 192.168.56.1 | count=116 | threshold=50
+2026-05-01 20:34:33,278 - SYN FLOOD from 192.168.56.1 | count=117 | threshold=50
+2026-05-01 20:34:33,280 - SYN FLOOD from 192.168.56.1 | count=118 | threshold=50
+2026-05-01 20:34:33,283 - SYN FLOOD from 192.168.56.1 | count=119 | threshold=50
+2026-05-01 20:34:36,658 - SYN FLOOD from 192.168.56.1 | count=120 | threshold=50
+2026-05-01 20:34:36,673 - SYN FLOOD from 192.168.56.1 | count=121 | threshold=50
+2026-05-01 20:34:36,675 - SYN FLOOD from 192.168.56.1 | count=122 | threshold=50
+2026-05-01 20:34:36,677 - SYN FLOOD from 192.168.56.1 | count=123 | threshold=50
+2026-05-01 20:34:36,681 - SYN FLOOD from 192.168.56.1 | count=124 | threshold=50
+2026-05-01 20:34:39,660 - SYN FLOOD from 192.168.56.1 | count=125 | threshold=50
+2026-05-01 20:34:39,670 - SYN FLOOD from 192.168.56.1 | count=126 | threshold=50
+2026-05-01 20:34:39,672 - SYN FLOOD from 192.168.56.1 | count=127 | threshold=50
+2026-05-01 20:34:39,673 - SYN FLOOD from 192.168.56.1 | count=128 | threshold=50
+2026-05-01 20:34:39,674 - SYN FLOOD from 192.168.56.1 | count=129 | threshold=50
+2026-05-01 20:34:42,661 - SYN FLOOD from 192.168.56.1 | count=130 | threshold=50
+2026-05-01 20:34:42,678 - SYN FLOOD from 192.168.56.1 | count=131 | threshold=50
+2026-05-01 20:34:42,697 - SYN FLOOD from 192.168.56.1 | count=132 | threshold=50
+2026-05-01 20:34:42,698 - SYN FLOOD from 192.168.56.1 | count=133 | threshold=50
+2026-05-01 20:34:42,703 - SYN FLOOD from 192.168.56.1 | count=134 | threshold=50
+2026-05-01 20:34:45,278 - SYN FLOOD from 192.168.56.1 | count=135 | threshold=50
+2026-05-01 20:34:45,288 - SYN FLOOD from 192.168.56.1 | count=136 | threshold=50
+2026-05-01 20:34:45,290 - SYN FLOOD from 192.168.56.1 | count=137 | threshold=50
+2026-05-01 20:34:45,292 - SYN FLOOD from 192.168.56.1 | count=138 | threshold=50
+2026-05-01 20:34:45,296 - SYN FLOOD from 192.168.56.1 | count=139 | threshold=50
+2026-05-01 20:34:48,313 - SYN FLOOD from 192.168.56.1 | count=140 | threshold=50
+2026-05-01 20:34:48,324 - SYN FLOOD from 192.168.56.1 | count=141 | threshold=50
+2026-05-01 20:34:48,328 - SYN FLOOD from 192.168.56.1 | count=142 | threshold=50
+2026-05-01 20:34:48,330 - SYN FLOOD from 192.168.56.1 | count=143 | threshold=50
+2026-05-01 20:34:48,336 - SYN FLOOD from 192.168.56.1 | count=144 | threshold=50
+2026-05-01 20:34:51,304 - SYN FLOOD from 192.168.56.1 | count=145 | threshold=50
+2026-05-01 20:34:51,316 - SYN FLOOD from 192.168.56.1 | count=146 | threshold=50
+2026-05-01 20:34:51,322 - SYN FLOOD from 192.168.56.1 | count=147 | threshold=50
+2026-05-01 20:34:51,324 - SYN FLOOD from 192.168.56.1 | count=148 | threshold=50
+2026-05-01 20:34:51,329 - SYN FLOOD from 192.168.56.1 | count=149 | threshold=50
+2026-05-01 20:34:54,311 - SYN FLOOD from 192.168.56.1 | count=150 | threshold=50
+2026-05-01 20:34:54,330 - SYN FLOOD from 192.168.56.1 | count=151 | threshold=50
+2026-05-01 20:34:54,335 - SYN FLOOD from 192.168.56.1 | count=152 | threshold=50
+2026-05-01 20:34:54,342 - SYN FLOOD from 192.168.56.1 | count=153 | threshold=50
+2026-05-01 20:34:54,343 - SYN FLOOD from 192.168.56.1 | count=154 | threshold=50
+2026-05-01 20:34:57,290 - SYN FLOOD from 192.168.56.1 | count=155 | threshold=50
+2026-05-01 20:34:57,296 - SYN FLOOD from 192.168.56.1 | count=156 | threshold=50
+2026-05-01 20:34:57,302 - SYN FLOOD from 192.168.56.1 | count=157 | threshold=50
+2026-05-01 20:34:57,304 - SYN FLOOD from 192.168.56.1 | count=158 | threshold=50
+2026-05-01 20:34:57,306 - SYN FLOOD from 192.168.56.1 | count=159 | threshold=50
+2026-05-01 20:35:00,294 - SYN FLOOD from 192.168.56.1 | count=160 | threshold=50
+2026-05-01 20:35:00,326 - SYN FLOOD from 192.168.56.1 | count=161 | threshold=50
+2026-05-01 20:35:00,340 - SYN FLOOD from 192.168.56.1 | count=162 | threshold=50
+2026-05-01 20:35:00,342 - SYN FLOOD from 192.168.56.1 | count=163 | threshold=50
+2026-05-01 20:35:00,345 - SYN FLOOD from 192.168.56.1 | count=164 | threshold=50
+2026-05-01 20:35:03,296 - SYN FLOOD from 192.168.56.1 | count=165 | threshold=50
+2026-05-01 20:35:03,310 - SYN FLOOD from 192.168.56.1 | count=166 | threshold=50
+2026-05-01 20:35:03,316 - SYN FLOOD from 192.168.56.1 | count=167 | threshold=50
+2026-05-01 20:35:03,323 - SYN FLOOD from 192.168.56.1 | count=168 | threshold=50
+2026-05-01 20:35:03,330 - SYN FLOOD from 192.168.56.1 | count=169 | threshold=50
+2026-05-01 20:35:06,289 - SYN FLOOD from 192.168.56.1 | count=170 | threshold=50
+2026-05-01 20:35:06,302 - SYN FLOOD from 192.168.56.1 | count=171 | threshold=50
+2026-05-01 20:35:06,306 - SYN FLOOD from 192.168.56.1 | count=172 | threshold=50
+2026-05-01 20:35:06,311 - SYN FLOOD from 192.168.56.1 | count=173 | threshold=50
+2026-05-01 20:35:06,316 - SYN FLOOD from 192.168.56.1 | count=174 | threshold=50
+2026-05-01 20:35:09,304 - SYN FLOOD from 192.168.56.1 | count=175 | threshold=50
+2026-05-01 20:35:09,320 - SYN FLOOD from 192.168.56.1 | count=176 | threshold=50
+2026-05-01 20:35:09,326 - SYN FLOOD from 192.168.56.1 | count=177 | threshold=50
+2026-05-01 20:35:09,329 - SYN FLOOD from 192.168.56.1 | count=178 | threshold=50
+2026-05-01 20:35:09,330 - SYN FLOOD from 192.168.56.1 | count=179 | threshold=50
+2026-05-01 20:35:12,351 - SYN FLOOD from 192.168.56.1 | count=180 | threshold=50
+2026-05-01 20:35:12,379 - SYN FLOOD from 192.168.56.1 | count=181 | threshold=50
+2026-05-01 20:35:12,381 - SYN FLOOD from 192.168.56.1 | count=182 | threshold=50
+2026-05-01 20:35:12,384 - SYN FLOOD from 192.168.56.1 | count=183 | threshold=50
+2026-05-01 20:35:12,385 - SYN FLOOD from 192.168.56.1 | count=184 | threshold=50
+2026-05-01 20:35:15,310 - SYN FLOOD from 192.168.56.1 | count=185 | threshold=50
+2026-05-01 20:35:15,311 - SYN FLOOD from 192.168.56.1 | count=186 | threshold=50
+2026-05-01 20:35:15,313 - SYN FLOOD from 192.168.56.1 | count=187 | threshold=50
+2026-05-01 20:35:15,313 - SYN FLOOD from 192.168.56.1 | count=188 | threshold=50
+2026-05-01 20:35:15,314 - SYN FLOOD from 192.168.56.1 | count=189 | threshold=50
+2026-05-01 20:35:18,324 - SYN FLOOD from 192.168.56.1 | count=190 | threshold=50
+2026-05-01 20:35:18,333 - SYN FLOOD from 192.168.56.1 | count=191 | threshold=50
+2026-05-01 20:35:18,336 - SYN FLOOD from 192.168.56.1 | count=192 | threshold=50
+2026-05-01 20:35:18,338 - SYN FLOOD from 192.168.56.1 | count=193 | threshold=50
+2026-05-01 20:35:18,343 - SYN FLOOD from 192.168.56.1 | count=194 | threshold=50
+2026-05-01 20:35:21,302 - SYN FLOOD from 192.168.56.1 | count=195 | threshold=50
+2026-05-01 20:35:21,309 - SYN FLOOD from 192.168.56.1 | count=196 | threshold=50
+2026-05-01 20:35:21,311 - SYN FLOOD from 192.168.56.1 | count=197 | threshold=50
+2026-05-01 20:35:21,315 - SYN FLOOD from 192.168.56.1 | count=198 | threshold=50
+2026-05-01 20:35:21,316 - SYN FLOOD from 192.168.56.1 | count=199 | threshold=50
+2026-05-01 20:35:24,337 - SYN FLOOD from 192.168.56.1 | count=200 | threshold=50
+2026-05-01 20:35:24,343 - SYN FLOOD from 192.168.56.1 | count=201 | threshold=50
+2026-05-01 20:35:24,345 - SYN FLOOD from 192.168.56.1 | count=202 | threshold=50
+2026-05-01 20:35:24,348 - SYN FLOOD from 192.168.56.1 | count=203 | threshold=50
+2026-05-01 20:35:24,352 - SYN FLOOD from 192.168.56.1 | count=204 | threshold=50
+2026-05-01 20:35:27,328 - SYN FLOOD from 192.168.56.1 | count=205 | threshold=50
+2026-05-01 20:35:27,352 - SYN FLOOD from 192.168.56.1 | count=206 | threshold=50
+2026-05-01 20:35:27,357 - SYN FLOOD from 192.168.56.1 | count=207 | threshold=50
+2026-05-01 20:35:27,360 - SYN FLOOD from 192.168.56.1 | count=208 | threshold=50
+2026-05-01 20:35:27,372 - SYN FLOOD from 192.168.56.1 | count=209 | threshold=50
+2026-05-01 20:35:30,684 - SYN FLOOD from 192.168.56.1 | count=210 | threshold=50
+2026-05-01 20:35:30,696 - SYN FLOOD from 192.168.56.1 | count=211 | threshold=50
+2026-05-01 20:35:30,704 - SYN FLOOD from 192.168.56.1 | count=212 | threshold=50
+2026-05-01 20:35:30,712 - SYN FLOOD from 192.168.56.1 | count=213 | threshold=50
+2026-05-01 20:35:30,718 - SYN FLOOD from 192.168.56.1 | count=214 | threshold=50
+2026-05-01 20:35:33,673 - SYN FLOOD from 192.168.56.1 | count=215 | threshold=50
+2026-05-01 20:35:33,686 - SYN FLOOD from 192.168.56.1 | count=216 | threshold=50
+2026-05-01 20:35:33,695 - SYN FLOOD from 192.168.56.1 | count=217 | threshold=50
+2026-05-01 20:35:33,702 - SYN FLOOD from 192.168.56.1 | count=218 | threshold=50
+2026-05-01 20:35:33,714 - SYN FLOOD from 192.168.56.1 | count=219 | threshold=50
+2026-05-01 20:35:36,678 - SYN FLOOD from 192.168.56.1 | count=220 | threshold=50
+2026-05-01 20:35:36,694 - SYN FLOOD from 192.168.56.1 | count=221 | threshold=50
+2026-05-01 20:35:36,703 - SYN FLOOD from 192.168.56.1 | count=222 | threshold=50
+2026-05-01 20:35:36,708 - SYN FLOOD from 192.168.56.1 | count=223 | threshold=50
+2026-05-01 20:35:36,714 - SYN FLOOD from 192.168.56.1 | count=224 | threshold=50
+2026-05-01 20:35:39,681 - SYN FLOOD from 192.168.56.1 | count=225 | threshold=50
+2026-05-01 20:35:39,704 - SYN FLOOD from 192.168.56.1 | count=226 | threshold=50
+2026-05-01 20:35:39,712 - SYN FLOOD from 192.168.56.1 | count=227 | threshold=50
+2026-05-01 20:35:39,720 - SYN FLOOD from 192.168.56.1 | count=228 | threshold=50
+2026-05-01 20:35:39,726 - SYN FLOOD from 192.168.56.1 | count=229 | threshold=50
+2026-05-01 20:35:42,730 - SYN FLOOD from 192.168.56.1 | count=230 | threshold=50
+2026-05-01 20:35:42,742 - SYN FLOOD from 192.168.56.1 | count=231 | threshold=50
+2026-05-01 20:35:42,747 - SYN FLOOD from 192.168.56.1 | count=232 | threshold=50
+2026-05-01 20:35:42,757 - SYN FLOOD from 192.168.56.1 | count=233 | threshold=50
+2026-05-01 20:35:42,761 - SYN FLOOD from 192.168.56.1 | count=234 | threshold=50
+2026-05-01 20:35:45,678 - SYN FLOOD from 192.168.56.1 | count=235 | threshold=50
+2026-05-01 20:35:45,717 - SYN FLOOD from 192.168.56.1 | count=236 | threshold=50
+2026-05-01 20:35:45,722 - SYN FLOOD from 192.168.56.1 | count=237 | threshold=50
+2026-05-01 20:35:45,730 - SYN FLOOD from 192.168.56.1 | count=238 | threshold=50
+2026-05-01 20:35:45,734 - SYN FLOOD from 192.168.56.1 | count=239 | threshold=50
+2026-05-01 20:35:48,685 - SYN FLOOD from 192.168.56.1 | count=240 | threshold=50
+2026-05-01 20:35:48,697 - SYN FLOOD from 192.168.56.1 | count=241 | threshold=50
+2026-05-01 20:35:48,701 - SYN FLOOD from 192.168.56.1 | count=242 | threshold=50
+2026-05-01 20:35:48,703 - SYN FLOOD from 192.168.56.1 | count=243 | threshold=50
+2026-05-01 20:35:48,708 - SYN FLOOD from 192.168.56.1 | count=244 | threshold=50
+2026-05-01 20:35:51,704 - SYN FLOOD from 192.168.56.1 | count=245 | threshold=50
+2026-05-01 20:35:51,709 - SYN FLOOD from 192.168.56.1 | count=246 | threshold=50
+2026-05-01 20:35:51,711 - SYN FLOOD from 192.168.56.1 | count=247 | threshold=50
+2026-05-01 20:35:51,718 - SYN FLOOD from 192.168.56.1 | count=248 | threshold=50
+2026-05-01 20:35:51,725 - SYN FLOOD from 192.168.56.1 | count=249 | threshold=50
+2026-05-01 20:35:54,674 - SYN FLOOD from 192.168.56.1 | count=250 | threshold=50
+2026-05-01 20:35:54,682 - SYN FLOOD from 192.168.56.1 | count=251 | threshold=50
+2026-05-01 20:35:54,687 - SYN FLOOD from 192.168.56.1 | count=252 | threshold=50
+2026-05-01 20:35:54,690 - SYN FLOOD from 192.168.56.1 | count=253 | threshold=50
+2026-05-01 20:35:54,694 - SYN FLOOD from 192.168.56.1 | count=254 | threshold=50
+2026-05-01 20:35:57,675 - SYN FLOOD from 192.168.56.1 | count=255 | threshold=50
+2026-05-01 20:35:57,678 - SYN FLOOD from 192.168.56.1 | count=256 | threshold=50
+2026-05-01 20:35:57,679 - SYN FLOOD from 192.168.56.1 | count=257 | threshold=50
+2026-05-01 20:35:57,681 - SYN FLOOD from 192.168.56.1 | count=258 | threshold=50
+2026-05-01 20:35:57,682 - SYN FLOOD from 192.168.56.1 | count=259 | threshold=50
+2026-05-01 20:36:00,674 - SYN FLOOD from 192.168.56.1 | count=260 | threshold=50
+2026-05-01 20:36:00,677 - SYN FLOOD from 192.168.56.1 | count=261 | threshold=50
+2026-05-01 20:36:00,682 - SYN FLOOD from 192.168.56.1 | count=262 | threshold=50
+2026-05-01 20:36:00,689 - SYN FLOOD from 192.168.56.1 | count=263 | threshold=50
+2026-05-01 20:36:00,693 - SYN FLOOD from 192.168.56.1 | count=264 | threshold=50
+2026-05-01 20:36:03,678 - SYN FLOOD from 192.168.56.1 | count=265 | threshold=50
+2026-05-01 20:36:03,680 - SYN FLOOD from 192.168.56.1 | count=266 | threshold=50
+2026-05-01 20:36:03,682 - SYN FLOOD from 192.168.56.1 | count=267 | threshold=50
+2026-05-01 20:36:03,696 - SYN FLOOD from 192.168.56.1 | count=268 | threshold=50
+2026-05-01 20:36:03,699 - SYN FLOOD from 192.168.56.1 | count=269 | threshold=50
+2026-05-01 20:36:06,679 - SYN FLOOD from 192.168.56.1 | count=270 | threshold=50
+2026-05-01 20:36:06,680 - SYN FLOOD from 192.168.56.1 | count=271 | threshold=50
+2026-05-01 20:36:06,681 - SYN FLOOD from 192.168.56.1 | count=272 | threshold=50
+2026-05-01 20:36:06,681 - SYN FLOOD from 192.168.56.1 | count=273 | threshold=50
+2026-05-01 20:36:06,682 - SYN FLOOD from 192.168.56.1 | count=274 | threshold=50
+2026-05-01 20:36:09,676 - SYN FLOOD from 192.168.56.1 | count=275 | threshold=50
+2026-05-01 20:36:09,679 - SYN FLOOD from 192.168.56.1 | count=276 | threshold=50
+2026-05-01 20:36:09,682 - SYN FLOOD from 192.168.56.1 | count=277 | threshold=50
+2026-05-01 20:36:09,683 - SYN FLOOD from 192.168.56.1 | count=278 | threshold=50
+2026-05-01 20:36:09,686 - SYN FLOOD from 192.168.56.1 | count=279 | threshold=50
+2026-05-01 20:36:12,693 - SYN FLOOD from 192.168.56.1 | count=280 | threshold=50
+2026-05-01 20:36:12,694 - SYN FLOOD from 192.168.56.1 | count=281 | threshold=50
+2026-05-01 20:36:12,694 - SYN FLOOD from 192.168.56.1 | count=282 | threshold=50
+2026-05-01 20:36:12,696 - SYN FLOOD from 192.168.56.1 | count=283 | threshold=50
+2026-05-01 20:36:12,696 - SYN FLOOD from 192.168.56.1 | count=284 | threshold=50
+2026-05-01 20:36:15,705 - SYN FLOOD from 192.168.56.1 | count=285 | threshold=50
+2026-05-01 20:36:15,707 - SYN FLOOD from 192.168.56.1 | count=286 | threshold=50
+2026-05-01 20:36:15,708 - SYN FLOOD from 192.168.56.1 | count=287 | threshold=50
+2026-05-01 20:36:15,709 - SYN FLOOD from 192.168.56.1 | count=288 | threshold=50
+2026-05-01 20:36:15,710 - SYN FLOOD from 192.168.56.1 | count=289 | threshold=50
+2026-05-01 20:36:18,692 - SYN FLOOD from 192.168.56.1 | count=290 | threshold=50
+2026-05-01 20:36:18,695 - SYN FLOOD from 192.168.56.1 | count=291 | threshold=50
+2026-05-01 20:36:18,698 - SYN FLOOD from 192.168.56.1 | count=292 | threshold=50
+2026-05-01 20:36:18,699 - SYN FLOOD from 192.168.56.1 | count=293 | threshold=50
+2026-05-01 20:36:18,700 - SYN FLOOD from 192.168.56.1 | count=294 | threshold=50
+2026-05-01 20:36:21,690 - SYN FLOOD from 192.168.56.1 | count=295 | threshold=50
+2026-05-01 20:36:21,702 - SYN FLOOD from 192.168.56.1 | count=296 | threshold=50
+2026-05-01 20:36:21,704 - SYN FLOOD from 192.168.56.1 | count=297 | threshold=50
+2026-05-01 20:36:21,706 - SYN FLOOD from 192.168.56.1 | count=298 | threshold=50
+2026-05-01 20:36:21,707 - SYN FLOOD from 192.168.56.1 | count=299 | threshold=50
+2026-05-01 20:43:37,000 - L1 MONITOR | ip=5.8.88.88 | action=log_only
+2026-05-01 20:43:37,045 - HYBRID ALERT | type=SYN_FLOOD | src_ip=5.8.88.88 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=RU | clf_conf=0.6833 | iso_score=-0.0743 | pps=13.59
+2026-05-01 20:43:38,214 - CMD OK: remove block 5.8.88.88
+2026-05-01 20:43:38,667 - L1 MONITOR | ip=5.8.88.88 | action=log_only
+2026-05-01 20:43:38,681 - HYBRID ALERT | type=SYN_FLOOD | src_ip=5.8.88.88 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=RU | clf_conf=0.6433 | iso_score=-0.0735 | pps=17.72
+2026-05-01 20:43:39,431 - CMD OK: remove throttle 5.8.88.88
+2026-05-01 20:43:40,091 - CMD OK: remove restrict 5.8.88.88
+2026-05-01 20:43:40,509 - CMD OK: remove block 5.8.88.88
+2026-05-01 20:43:41,411 - CMD OK: remove throttle 5.8.88.88
+2026-05-01 20:43:42,566 - CMD OK: remove restrict 5.8.88.88
+2026-05-01 20:43:43,155 - CMD OK: remove block 5.8.88.88
+2026-05-01 20:43:43,772 - CMD OK: remove throttle 5.8.88.88
+2026-05-01 20:43:44,318 - CMD OK: remove restrict 5.8.88.88
+2026-05-01 20:43:44,668 - CMD OK: flush all rules for 5.8.88.88
+2026-05-01 20:43:44,668 - RELEASE | ip=5.8.88.88 | level=L1 | action=rules_removed
+2026-05-01 20:45:59,338 - CMD OK: remove block 5.8.88.88
+2026-05-01 20:45:59,383 - CMD OK: remove throttle 5.8.88.88
+2026-05-01 20:45:59,413 - CMD OK: remove restrict 5.8.88.88
+2026-05-01 20:45:59,419 - CMD OK: remove block 5.8.88.88
+2026-05-01 20:45:59,425 - CMD OK: remove throttle 5.8.88.88
+2026-05-01 20:45:59,432 - CMD OK: remove restrict 5.8.88.88
+2026-05-01 20:45:59,437 - CMD OK: remove block 5.8.88.88
+2026-05-01 20:45:59,447 - CMD OK: remove throttle 5.8.88.88
+2026-05-01 20:45:59,453 - CMD OK: remove restrict 5.8.88.88
+2026-05-01 20:45:59,474 - CMD OK: flush all rules for 5.8.88.88
+2026-05-01 20:45:59,474 - RELEASE | ip=5.8.88.88 | level=L1 | action=rules_removed
+2026-05-01 20:46:23,384 - L1 MONITOR | ip=5.8.88.88 | action=log_only
+2026-05-01 20:46:23,385 - HYBRID ALERT | type=SYN_FLOOD | src_ip=5.8.88.88 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=RU | clf_conf=0.6833 | iso_score=-0.0735 | pps=17.56
+2026-05-01 20:46:24,114 - L1 MONITOR | ip=5.8.88.88 | action=log_only
+2026-05-01 20:46:24,134 - HYBRID ALERT | type=SYN_FLOOD | src_ip=5.8.88.88 | threat_score=24 | threat_level=LOW | ml_pts=6 | type_pts=13 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=RU | clf_conf=0.6667 | iso_score=-0.0765 | pps=10.19
+2026-05-01 20:46:31,677 - HYBRID ALERT | type=SYN_FLOOD | src_ip=5.8.88.88 | threat_score=29 | threat_level=LOW | ml_pts=13 | type_pts=13 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=RU | clf_conf=0.5033 | iso_score=-0.0560 | pps=6.35
+2026-05-01 20:46:31,806 - CMD OK: remove block 5.8.88.88
+2026-05-01 20:46:31,825 - CMD OK: remove throttle 5.8.88.88
+2026-05-01 20:46:31,841 - CMD OK: remove restrict 5.8.88.88
+2026-05-01 20:46:31,854 - CMD OK: remove block 5.8.88.88
+2026-05-01 20:46:31,872 - CMD OK: remove throttle 5.8.88.88
+2026-05-01 20:46:31,875 - CMD OK: remove restrict 5.8.88.88
+2026-05-01 20:46:31,894 - CMD OK: remove block 5.8.88.88
+2026-05-01 20:46:31,903 - CMD OK: remove throttle 5.8.88.88
+2026-05-01 20:46:31,909 - CMD OK: remove restrict 5.8.88.88
+2026-05-01 20:46:31,977 - CMD OK: flush all rules for 5.8.88.88
+2026-05-01 20:46:31,977 - RELEASE | ip=5.8.88.88 | level=L1 | action=rules_removed
+2026-05-01 20:46:53,598 - HYBRID ALERT | type=UNKNOWN | src_ip=5.8.88.88 | threat_score=29 | threat_level=LOW | ml_pts=16 | type_pts=4 | pps_pts=1 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=RU | clf_conf=0.4633 | iso_score=-0.0800 | pps=4.04
+2026-05-01 20:46:53,599 - L1 MONITOR | ip=5.8.88.88 | action=log_only
+2026-05-01 20:46:53,599 - HYBRID ALERT | type=UNKNOWN | src_ip=5.8.88.88 | threat_score=23 | threat_level=LOW | ml_pts=16 | type_pts=4 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=RU | clf_conf=0.4633 | iso_score=-0.0806 | pps=4.94
+2026-05-01 20:49:34,788 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:35,158 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:35,243 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:35,295 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:35,357 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:35,377 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:35,383 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:35,457 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:35,556 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:35,589 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:35,675 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:35,790 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:35,911 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:36,074 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:36,142 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:36,287 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:36,390 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:36,623 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:37,354 - CMD OK: flush all rules for 1.180.0.1
+2026-05-01 20:49:37,403 - CMD OK: flush all rules for 1.180.0.1
+2026-05-01 20:49:37,411 - CMD OK: L2 throttle 1.180.0.1
+2026-05-01 20:49:37,495 - L2 THROTTLE | ip=1.180.0.1 | limit=50pps | burst=100
+2026-05-01 20:49:37,543 - CMD OK: L2 throttle 1.180.0.1
+2026-05-01 20:49:37,544 - L2 THROTTLE | ip=1.180.0.1 | limit=50pps | burst=100
+2026-05-01 20:49:37,741 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=50 | threat_level=MEDIUM | ml_pts=22 | type_pts=18 | pps_pts=8 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=1.0000 | iso_score=-0.1264 | pps=56.13
+2026-05-01 20:49:37,835 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=47 | threat_level=MEDIUM | ml_pts=22 | type_pts=18 | pps_pts=5 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=0.9933 | iso_score=-0.1219 | pps=42.18
+2026-05-01 20:49:41,241 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:41,355 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:41,466 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:41,556 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:41,754 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:41,802 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:41,966 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:41,985 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:42,125 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:42,154 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:42,174 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:42,240 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:42,243 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:42,276 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:42,321 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:42,335 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:49:42,422 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:49:42,492 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:49:42,675 - CMD OK: flush all rules for 1.180.0.1
+2026-05-01 20:49:42,676 - RELEASE | ip=1.180.0.1 | level=L2 | action=rules_removed
+2026-05-01 20:49:42,722 - CMD OK: flush all rules for 1.180.0.1
+2026-05-01 20:49:42,722 - RELEASE | ip=1.180.0.1 | level=L2 | action=rules_removed
+2026-05-01 20:50:29,680 - L1 MONITOR | ip=1.180.0.1 | action=log_only
+2026-05-01 20:50:29,716 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=0.4000 | iso_score=-0.1370 | pps=2.35
+2026-05-01 20:50:30,451 - L1 MONITOR | ip=1.180.0.1 | action=log_only
+2026-05-01 20:50:30,470 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=35 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=0.4000 | iso_score=-0.1370 | pps=2.36
+2026-05-01 20:50:34,835 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:50:34,949 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:50:34,977 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:50:35,063 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:50:35,112 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:50:35,150 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:50:35,172 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:50:35,213 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:50:35,289 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:50:35,687 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:50:35,767 - CMD OK: flush all rules for 1.180.0.1
+2026-05-01 20:50:35,778 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:50:35,879 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:50:35,895 - CMD OK: L2 throttle 1.180.0.1
+2026-05-01 20:50:35,895 - L2 THROTTLE | ip=1.180.0.1 | limit=50pps | burst=100
+2026-05-01 20:50:35,924 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:50:35,983 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=47 | threat_level=MEDIUM | ml_pts=25 | type_pts=15 | pps_pts=5 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=0.8367 | iso_score=-0.1252 | pps=37.13
+2026-05-01 20:50:36,007 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:50:36,104 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:50:36,171 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:50:36,255 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:50:36,362 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:50:36,650 - CMD OK: flush all rules for 1.180.0.1
+2026-05-01 20:50:36,830 - CMD OK: L2 throttle 1.180.0.1
+2026-05-01 20:50:36,830 - L2 THROTTLE | ip=1.180.0.1 | limit=50pps | burst=100
+2026-05-01 20:50:37,266 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=43 | threat_level=MEDIUM | ml_pts=25 | type_pts=11 | pps_pts=5 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=CN | clf_conf=0.5467 | iso_score=-0.1313 | pps=22.97
+2026-05-01 20:50:41,097 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=45 | threat_level=MEDIUM | ml_pts=25 | type_pts=11 | pps_pts=5 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=CN | clf_conf=0.5067 | iso_score=-0.1313 | pps=25.52
+2026-05-01 20:50:41,585 - L1 MONITOR | ip=1.180.0.1 | action=log_only
+2026-05-01 20:50:41,628 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=34 | threat_level=LOW | ml_pts=22 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=CN | clf_conf=0.4367 | iso_score=-0.1111 | pps=2.78
+2026-05-01 20:50:47,793 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=43 | threat_level=MEDIUM | ml_pts=25 | type_pts=11 | pps_pts=3 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=CN | clf_conf=0.5733 | iso_score=-0.1340 | pps=12.53
+2026-05-01 20:50:47,895 - HYBRID ALERT | type=UDP_FLOOD | src_ip=1.180.0.1 | threat_score=37 | threat_level=LOW | ml_pts=25 | type_pts=7 | pps_pts=1 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=CN | clf_conf=0.4600 | iso_score=-0.1219 | pps=6.17
+2026-05-01 20:52:35,080 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:52:35,107 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:52:35,195 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:52:35,230 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:52:35,296 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:52:35,347 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:52:35,364 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:52:35,450 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:52:35,484 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:52:35,763 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:52:35,879 - CMD OK: flush all rules for 1.180.0.1
+2026-05-01 20:52:35,880 - RELEASE | ip=1.180.0.1 | level=L2 | action=rules_removed
+2026-05-01 20:52:35,868 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:52:35,937 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:52:35,994 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:52:36,003 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:52:36,036 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:52:36,079 - CMD OK: remove block 1.180.0.1
+2026-05-01 20:52:36,179 - CMD OK: remove throttle 1.180.0.1
+2026-05-01 20:52:36,250 - CMD OK: remove restrict 1.180.0.1
+2026-05-01 20:52:36,453 - CMD OK: flush all rules for 1.180.0.1
+2026-05-01 20:52:36,454 - RELEASE | ip=1.180.0.1 | level=L1 | action=rules_removed
+2026-05-01 20:52:47,225 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:52:47,273 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:52:47,338 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:52:47,369 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:52:47,428 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:52:47,457 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:52:47,494 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:52:47,495 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:52:47,538 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:52:47,541 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:52:47,559 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:52:47,588 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:52:47,593 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:52:47,622 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:52:47,625 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:52:47,638 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:52:47,695 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:52:47,723 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:52:47,762 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:52:47,792 - CMD OK: L2 throttle 192.168.56.1
+2026-05-01 20:52:47,792 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-01 20:52:47,821 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:52:47,846 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=43 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5400 | iso_score=-0.0681 | pps=130.99
+2026-05-01 20:52:47,857 - CMD OK: L2 throttle 192.168.56.1
+2026-05-01 20:52:47,857 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-01 20:52:48,087 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=42 | threat_level=MEDIUM | ml_pts=19 | type_pts=9 | pps_pts=12 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.6333 | iso_score=-0.0644 | pps=103.16
+2026-05-01 20:52:51,427 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=47 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=16 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.6300 | iso_score=-0.0713 | pps=210.72
+2026-05-01 20:52:51,663 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=47 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=16 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.6433 | iso_score=-0.0781 | pps=209.97
+2026-05-01 20:52:58,035 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=52 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.7867 | iso_score=-0.0827 | pps=357.02
+2026-05-01 20:52:58,159 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=52 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.7567 | iso_score=-0.0812 | pps=399.49
+2026-05-01 20:53:03,751 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=52 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.7867 | iso_score=-0.0770 | pps=250.73
+2026-05-01 20:53:04,049 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=52 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.8033 | iso_score=-0.0797 | pps=284.92
+2026-05-01 20:53:10,741 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:10,796 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:10,848 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:10,914 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:10,968 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:11,004 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:11,089 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:11,181 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:11,293 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:11,311 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:11,367 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:11,462 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:11,503 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:11,715 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:11,721 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:53:11,748 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:11,828 - CMD OK: L3 restrict 192.168.56.1
+2026-05-01 20:53:11,828 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-05-01 20:53:11,894 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=56 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.8233 | iso_score=-0.0786 | pps=289.07
+2026-05-01 20:53:11,910 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:11,977 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:12,061 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:12,416 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:53:12,528 - CMD OK: L3 restrict 192.168.56.1
+2026-05-01 20:53:12,528 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-05-01 20:53:12,746 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=56 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.8200 | iso_score=-0.0791 | pps=290.98
+2026-05-01 20:53:15,499 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:15,532 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:15,559 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:15,564 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:15,584 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:15,609 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:15,613 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:15,623 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:15,631 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:15,660 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:15,670 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:15,677 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:53:15,680 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:15,685 - CMD OK: L2 throttle 192.168.56.1
+2026-05-01 20:53:15,686 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-01 20:53:15,690 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:15,731 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:15,751 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=41 | threat_level=MEDIUM | ml_pts=19 | type_pts=9 | pps_pts=5 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.6200 | iso_score=-0.0885 | pps=45.66
+2026-05-01 20:53:15,780 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:15,841 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:15,910 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:16,010 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:16,183 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:53:16,272 - CMD OK: L2 throttle 192.168.56.1
+2026-05-01 20:53:16,272 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-01 20:53:16,364 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=47 | threat_level=MEDIUM | ml_pts=19 | type_pts=12 | pps_pts=8 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.7000 | iso_score=-0.0789 | pps=78.57
+2026-05-01 20:53:21,373 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=46 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.6267 | iso_score=-0.0590 | pps=167.35
+2026-05-01 20:53:21,587 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=49 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.6300 | iso_score=-0.0660 | pps=180.97
+2026-05-01 20:53:27,179 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:27,190 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:27,199 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:27,245 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:27,271 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:27,295 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:27,328 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:27,370 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:27,375 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:27,393 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:27,423 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:27,455 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:27,478 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:27,503 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:27,521 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:27,536 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:27,565 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:27,591 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:27,657 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:53:27,689 - CMD OK: L3 restrict 192.168.56.1
+2026-05-01 20:53:27,689 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-05-01 20:53:27,755 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:53:27,794 - CMD OK: L3 restrict 192.168.56.1
+2026-05-01 20:53:27,794 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-05-01 20:53:27,802 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=56 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.7233 | iso_score=-0.0791 | pps=210.84
+2026-05-01 20:53:27,860 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=56 | threat_level=MEDIUM | ml_pts=19 | type_pts=13 | pps_pts=16 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.7200 | iso_score=-0.0791 | pps=205.34
+2026-05-01 20:53:32,916 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:32,925 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:32,977 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:32,990 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:33,012 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:33,015 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:33,035 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:33,037 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:33,054 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:33,057 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:33,124 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:33,136 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:33,168 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:33,177 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:33,181 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:33,239 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:33,267 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:33,322 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:53:33,324 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:33,353 - CMD OK: L2 throttle 192.168.56.1
+2026-05-01 20:53:33,354 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-01 20:53:33,423 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=49 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.5267 | iso_score=-0.0765 | pps=161.38
+2026-05-01 20:53:33,583 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:53:33,610 - CMD OK: L2 throttle 192.168.56.1
+2026-05-01 20:53:33,610 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-01 20:53:33,653 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=45 | threat_level=MEDIUM | ml_pts=19 | type_pts=6 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.4567 | iso_score=-0.0775 | pps=158.82
+2026-05-01 20:53:39,098 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.6733 | iso_score=-0.0786 | pps=188.88
+2026-05-01 20:53:39,099 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.6467 | iso_score=-0.0784 | pps=185.77
+2026-05-01 20:53:48,390 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:48,403 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:48,410 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:48,416 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:48,419 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=53 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.6700 | iso_score=-0.0693 | pps=199.86
+2026-05-01 20:53:48,423 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:48,430 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:48,449 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:53:48,468 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:53:48,552 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:53:48,889 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:53:49,023 - CMD OK: L3 restrict 192.168.56.1
+2026-05-01 20:53:49,023 - L3 RESTRICT | ip=192.168.56.1 | limit=10pps | burst=20
+2026-05-01 20:53:49,077 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=57 | threat_level=MEDIUM | ml_pts=19 | type_pts=10 | pps_pts=16 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.6933 | iso_score=-0.0724 | pps=218.79
+2026-05-01 20:53:53,407 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-05-01 20:53:53,456 - HYBRID ALERT | type=UNKNOWN | src_ip=192.168.56.1 | threat_score=38 | threat_level=LOW | ml_pts=19 | type_pts=4 | pps_pts=3 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.2933 | iso_score=-0.0700 | pps=10.36
+2026-05-01 20:53:53,911 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=42 | threat_level=MEDIUM | ml_pts=16 | type_pts=9 | pps_pts=5 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.6533 | iso_score=-0.0456 | pps=42.8
+2026-05-01 20:54:03,510 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:54:03,569 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=48 | threat_level=MEDIUM | ml_pts=19 | type_pts=12 | pps_pts=5 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.8533 | iso_score=-0.0759 | pps=33.86
+2026-05-01 20:54:03,841 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:54:03,908 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:54:04,155 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:54:04,169 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:54:04,260 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:54:04,387 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:54:04,416 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:54:04,466 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:54:04,731 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:54:05,057 - CMD OK: L2 throttle 192.168.56.1
+2026-05-01 20:54:05,057 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-01 20:54:05,416 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=48 | threat_level=MEDIUM | ml_pts=19 | type_pts=12 | pps_pts=5 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.7933 | iso_score=-0.0737 | pps=37.59
+2026-05-01 20:54:17,748 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:54:17,748 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:54:17,777 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:54:17,779 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:54:17,797 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:54:17,808 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:54:17,843 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:54:17,843 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:54:17,882 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:54:17,883 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:54:17,915 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:54:17,934 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:54:17,977 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:54:17,984 - CMD OK: remove block 192.168.56.1
+2026-05-01 20:54:18,021 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:54:18,031 - CMD OK: remove throttle 192.168.56.1
+2026-05-01 20:54:18,047 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:54:18,131 - CMD OK: remove restrict 192.168.56.1
+2026-05-01 20:54:18,560 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:54:18,560 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-05-01 20:54:18,572 - CMD OK: flush all rules for 192.168.56.1
+2026-05-01 20:54:18,588 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-05-02 15:43:23,461 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-05-02 15:43:23,465 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=27 | threat_level=LOW | ml_pts=3 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0557 | pps=101.23
+2026-05-02 15:43:28,641 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=27 | threat_level=LOW | ml_pts=3 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5267 | iso_score=-0.0565 | pps=106.83
+2026-05-02 15:45:42,627 - CMD OK: remove block 192.168.56.1
+2026-05-02 15:45:42,644 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 15:45:42,654 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 15:45:42,658 - CMD OK: remove block 192.168.56.1
+2026-05-02 15:45:42,663 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 15:45:42,668 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 15:45:42,672 - CMD OK: remove block 192.168.56.1
+2026-05-02 15:45:42,676 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 15:45:42,680 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 15:45:42,717 - CMD OK: flush all rules for 192.168.56.1
+2026-05-02 15:45:42,717 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-05-02 15:47:19,455 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-05-02 15:47:19,456 - HYBRID ALERT | type=UNKNOWN | src_ip=192.168.56.1 | threat_score=20 | threat_level=LOW | ml_pts=13 | type_pts=4 | pps_pts=1 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.4367 | iso_score=-0.0384 | pps=3.07
+2026-05-02 15:47:31,067 - HYBRID ALERT | type=UNKNOWN | src_ip=192.168.56.1 | threat_score=24 | threat_level=LOW | ml_pts=13 | type_pts=6 | pps_pts=3 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5533 | iso_score=-0.0394 | pps=14.53
+2026-05-02 15:47:38,111 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=31 | threat_level=LOW | ml_pts=13 | type_pts=9 | pps_pts=5 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.6700 | iso_score=-0.0447 | pps=30.74
+2026-05-02 15:47:47,907 - HYBRID ALERT | type=UNKNOWN | src_ip=192.168.56.1 | threat_score=24 | threat_level=LOW | ml_pts=13 | type_pts=4 | pps_pts=3 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.4700 | iso_score=-0.0394 | pps=11.49
+2026-05-02 15:47:53,116 - CMD OK: remove block 192.168.56.1
+2026-05-02 15:47:53,120 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 15:47:53,124 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 15:47:53,131 - CMD OK: remove block 192.168.56.1
+2026-05-02 15:47:53,137 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 15:47:53,141 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 15:47:53,145 - CMD OK: remove block 192.168.56.1
+2026-05-02 15:47:53,151 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 15:47:53,155 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 15:47:53,174 - CMD OK: flush all rules for 192.168.56.1
+2026-05-02 15:47:53,178 - CMD OK: L2 throttle 192.168.56.1
+2026-05-02 15:47:53,178 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-02 15:47:53,185 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=42 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=8 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.5233 | iso_score=-0.0557 | pps=90.27
+2026-05-02 15:47:58,296 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=46 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0565 | pps=102.58
+2026-05-02 15:48:06,459 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-05-02 15:48:06,460 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=38 | threat_level=LOW | ml_pts=16 | type_pts=9 | pps_pts=5 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.6700 | iso_score=-0.0471 | pps=34.34
+2026-05-02 16:01:07,765 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:01:07,806 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:01:07,840 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:01:07,879 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:01:07,919 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:01:07,965 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:01:08,007 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:01:08,041 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:01:08,081 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:01:08,221 - CMD OK: flush all rules for 192.168.56.1
+2026-05-02 16:01:08,221 - RELEASE | ip=192.168.56.1 | level=L1 | action=rules_removed
+2026-05-02 16:03:10,377 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-05-02 16:03:10,396 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=36 | threat_level=LOW | ml_pts=16 | type_pts=10 | pps_pts=8 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5367 | iso_score=-0.0557 | pps=99.6
+2026-05-02 16:03:15,560 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:03:15,572 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:03:15,576 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:03:15,581 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:03:15,586 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:03:15,591 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:03:15,596 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:03:15,601 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:03:15,605 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:03:15,683 - CMD OK: flush all rules for 192.168.56.1
+2026-05-02 16:03:15,692 - CMD OK: L2 throttle 192.168.56.1
+2026-05-02 16:03:15,693 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-02 16:03:15,704 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=40 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0565 | pps=102.65
+2026-05-02 16:03:20,641 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-05-02 16:03:20,641 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=38 | threat_level=LOW | ml_pts=16 | type_pts=10 | pps_pts=8 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0557 | pps=90.39
+2026-05-02 16:03:39,327 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=34 | threat_level=LOW | ml_pts=16 | type_pts=9 | pps_pts=5 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.6033 | iso_score=-0.0347 | pps=20.76
+2026-05-02 16:03:44,514 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:03:44,521 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:03:44,526 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:03:44,530 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:03:44,538 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:03:44,544 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:03:44,550 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:03:44,555 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:03:44,559 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:03:44,578 - CMD OK: flush all rules for 192.168.56.1
+2026-05-02 16:03:44,585 - CMD OK: L2 throttle 192.168.56.1
+2026-05-02 16:03:44,585 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-02 16:03:44,594 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=46 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0557 | pps=101.85
+2026-05-02 16:03:49,675 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=43 | threat_level=MEDIUM | ml_pts=13 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0565 | pps=102.71
+2026-05-02 16:03:54,877 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=43 | threat_level=MEDIUM | ml_pts=13 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0557 | pps=102.59
+2026-05-02 16:04:00,108 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=42 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=8 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.5233 | iso_score=-0.0545 | pps=88.39
+2026-05-02 16:04:05,257 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=42 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=8 | intel_pts=0 | duration_pts=8 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0557 | pps=98.28
+2026-05-02 16:04:10,436 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=50 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0565 | pps=105.32
+2026-05-02 16:04:15,652 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=50 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0557 | pps=103.0
+2026-05-02 16:04:20,878 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=46 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=8 | intel_pts=0 | duration_pts=12 | abuse_score=0 | country=Private | clf_conf=0.5300 | iso_score=-0.0557 | pps=84.22
+2026-05-02 16:04:26,162 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:04:26,173 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:04:26,181 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:04:26,189 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:04:26,197 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:04:26,206 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:04:26,215 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:04:26,223 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:04:26,231 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:04:26,259 - CMD OK: flush all rules for 192.168.56.1
+2026-05-02 16:04:26,259 - RELEASE | ip=192.168.56.1 | level=L2 | action=rules_removed
+2026-05-02 16:04:31,304 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-05-02 16:04:31,308 - HYBRID ALERT | type=SLOWLORIS | src_ip=192.168.56.1 | threat_score=35 | threat_level=LOW | ml_pts=16 | type_pts=9 | pps_pts=8 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.6300 | iso_score=-0.0519 | pps=56.02
+2026-05-02 16:04:36,533 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:04:36,547 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:04:36,566 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:04:36,586 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:04:36,590 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:04:36,603 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:04:36,636 - CMD OK: remove block 192.168.56.1
+2026-05-02 16:04:36,649 - CMD OK: remove throttle 192.168.56.1
+2026-05-02 16:04:36,669 - CMD OK: remove restrict 192.168.56.1
+2026-05-02 16:04:36,733 - CMD OK: flush all rules for 192.168.56.1
+2026-05-02 16:04:36,740 - CMD OK: L2 throttle 192.168.56.1
+2026-05-02 16:04:36,740 - L2 THROTTLE | ip=192.168.56.1 | limit=50pps | burst=100
+2026-05-02 16:04:36,756 - HYBRID ALERT | type=HTTP_FLOOD | src_ip=192.168.56.1 | threat_score=40 | threat_level=MEDIUM | ml_pts=16 | type_pts=10 | pps_pts=12 | intel_pts=0 | duration_pts=2 | abuse_score=0 | country=Private | clf_conf=0.5367 | iso_score=-0.0565 | pps=102.21
+2026-05-02 16:04:47,222 - L1 MONITOR | ip=192.168.56.1 | action=log_only
+2026-05-02 16:04:47,222 - HYBRID ALERT | type=UNKNOWN | src_ip=192.168.56.1 | threat_score=27 | threat_level=LOW | ml_pts=16 | type_pts=4 | pps_pts=3 | intel_pts=0 | duration_pts=4 | abuse_score=0 | country=Private | clf_conf=0.4700 | iso_score=-0.0396 | pps=11.37

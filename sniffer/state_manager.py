@@ -110,9 +110,16 @@ class StateManager:
                 ).get("started_at", time.strftime("%Y-%m-%d %H:%M:%S")),
                 "last_seen"       : time.strftime("%Y-%m-%d %H:%M:%S"),
                 "threat_score"    : score_data.get("total_score", 0),
+                "threat_level"    : score_data.get("threat_level", "?"),
                 "mitigation_level": mit_result.get("level", 0),
+                "mitigation_name" : mit_result.get("name", "?"),
                 "breakdown"       : score_data.get("breakdown", {}),
+                "country"         : intel.get("country", "?"),
+                "isp"             : intel.get("isp", "?")[:30],
+                "abuse_score"     : intel.get("abuse_score", 0),
+                "pps"             : features.get("pps", 0),
             }
+
             # Add to event queue for WebSocket
             self.event_queue.append({
                 "type"          : "ALERT",

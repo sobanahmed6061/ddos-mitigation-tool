@@ -1,0 +1,12 @@
+{
+    "attack_id": "20260430_200741",
+    "attack_type": "SLOWLORIS",
+    "src_ip": "192.168.56.1",
+    "start_time": "2026-04-30 20:07:41",
+    "start_ts": 1777579661.9985385,
+    "end_time": "2026-04-30 20:09:39",
+    "duration_s": 117.6,
+    "packet_count": 12723,
+    "file_size_kb": 7021.6,
+    "pcap_path": "/app/logs/pcap/attack_20260430_200741.pcap"
+}
