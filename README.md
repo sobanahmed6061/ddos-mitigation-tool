@@ -14,10 +14,10 @@
 ## 📸 Screenshots
 
 ### Live Dashboard During Attack
-![Dashboard](screenshots/dashboard_attack.png)
+![Dashboard](screenshots/3.png)
 
 ### Terminal Detection Output
-![Detection](screenshots/detection_output.png)
+![Detection](screenshots/1.png)
 
 ---
 
