@@ -3,6 +3,11 @@
 > A comprehensive network security platform combining real-time 
 > traffic analysis, machine learning anomaly detection, automated 
 > mitigation, and SIEM integration.
+[![GitHub](https://img.shields.io/badge/GitHub-Code-blue)](https://github.com/YOUR_USERNAME/ddos-mitigation-tool)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-Models-yellow)](https://huggingface.co/YOUR_USERNAME/ddos-mitigation-models)
+[![Python](https://img.shields.io/badge/Python-3.11-blue)]()
+[![Docker](https://img.shields.io/badge/Docker-Compose-blue)]()
+[![ML](https://img.shields.io/badge/ML-TensorFlow%20%7C%20scikit--learn-orange)]()
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Docker](https://img.shields.io/badge/Docker-Compose-blue)
