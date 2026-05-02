@@ -14,11 +14,10 @@
 ## 📸 Screenshots
 
 ### Live Dashboard During Attack
-![Dashboard](screenshots/3.png)
+![Dashboard](screenshots/dashboard_attack.png)
 
 ### Terminal Detection Output
-![Detection](screenshots/1.png)
-
+![Detection](screenshots/detection_output.png)
 ---
 
 ## 🏗️ Architecture
