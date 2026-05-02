@@ -13,7 +13,11 @@
 
 ## 📸 Screenshots
 
-> Dashboard showing live attack detection and mitigation
+### Live Dashboard During Attack
+![Dashboard](screenshots/dashboard_attack.png)
+
+### Terminal Detection Output
+![Detection](screenshots/detection_output.png)
 
 ---
 
