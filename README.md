@@ -17,7 +17,8 @@
 ![Dashboard](screenshots/dashboard_attack.png)
 
 ### Terminal Detection Output
-![Detection](screenshots/detection_output.png)
+<img width="996" height="571" alt="threat intel" src="https://github.com/user-attachments/assets/864cdd28-61e6-4a3c-a92c-90f8099ae136" />
+
 ---
 
 ## 🏗️ Architecture
